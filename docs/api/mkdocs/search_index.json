@@ -1,0 +1,79 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "TODO", 
+            "title": "\u9996\u9875"
+        }, 
+        {
+            "location": "/#todo", 
+            "text": "", 
+            "title": "TODO"
+        }, 
+        {
+            "location": "/basic/standard/", 
+            "text": "\u6d4b\u8bd5\u4e0e\u751f\u4ea7\u5730\u5740\n\n\n\u4e3a\u4e86\u60a8\u80fd\u591f\u5728\u6d4f\u89c8\u8be5\u6587\u6863\u7684\u540c\u65f6\uff0c \u53ef\u4ee5\u65b9\u4fbf\u7684\u4f7f\u7528\u9875\u9762\u4e0a\u63d0\u4f9b\u7684 API \u6d4b\u8bd5\u5de5\u5177\n\u6765\u6d4b\u8bd5\u67d0\u4e2a\u63a5\u53e3\uff0c \u6587\u6863\u4e2d\u9ed8\u8ba4\u7684API\u5730\u5740\u662f\u7531\u6211\u4eec\u63d0\u4f9b\n\u7684\u6a21\u62df\u6d4b\u8bd5\u73af\u5883\uff0c \u7528\u6765\u534f\u52a9\u60a8\u5feb\u901f\u7684\u7406\u89e3\u548c\u638c\u63e1\u6211\u4eec\u7684API\uff0c \u540c\u65f6\u6211\u4eec\u914d\u5907\u4e86\u4e00\u4e2a\u6d4b\u8bd5\u7684\u524d\u7aef\u73af\u5883,\n\u6d4b\u8bd5\u5730\u5740\uff1a  \n\n\n\n\nAPI http://dev.api.tan14.cn  \n\n\n\u540e\u53f0 http://dev.app.tan14.cn  \n\n\n\n\n\u5f85\u60a8\u719f\u6089\u4e86\u6211\u4eec\u7684API\u4e4b\u540e\uff0c \u60a8\u5c31\u53ef\u4ee5\u4f7f\u7528\u6211\u4eec\u7684\u751f\u4ea7\u5730\u5740\u6765\u8fdb\u884c\u60a8\u7684\u4e1a\u52a1\u5f00\u53d1\u4e86,\n\u751f\u4ea7\u5730\u5740\uff1a  \n\n\n\n\nAPI https://api.tan14.cn  \n\n\n\u540e\u53f0 https://app.tan14.cn  \n\n\n\n\n\u8bf7\u6c42\n\n\n\u6240\u6709TAN14-API \u4ec5\u63a5\u53d7 \nContent-Type\n \u4e3a \napplication/json\n \u7684\u8bf7\u6c42\n\u4e14\u8bf7\u6c42\u4f53\u683c\u5f0f\u9700\u4e3a\nJSON\n\u7c7b\u578b\n\u6240\u6709\u8bf7\u6c42\u9700\u8981\u643a\u5e26 \nTan14-Key\n \u5934\u8fdb\u884c\u8eab\u4efd\u9a8c\u8bc1\n\n\n\u53c2\u6570\n\n\nTAN14 CDN \u7684API \u5305\u542b\u4e24\u79cd\u53c2\u6570\uff0c\u4e00\u79cd\u662f \nURL\u4e2d\u7684\u5360\u4f4d\u7b26\n \uff0c\n\u53e6\u4e00\u79cd\u662f\u8bf7\u6c42\u643a\u5e26\u7684\u53c2\u6570\uff0c\u5b9a\u4e49\u5728 Parameters \u533a\u57df\uff0c \u5176\u53d1\u9001\u65b9\u5f0f\u9075\u5faa\u6807\u51c6\u7684\nRESTful \u6807\u51c6\uff1a \u5373 GET\u8bf7\u6c42\u901a\u8fc7 QueryString \u53d1\u9001\uff0c \u5176\u4ed6\u65b9\u5f0f\u901a\u8fc7 http body\n\u7684\u65b9\u5f0f\u6765\u53d1\u9001\u3002\n\n\n\u54cd\u5e94\n\n\n\u6240\u6709TAN14 API\u63a5\u53e3\u8fd4\u56de\u6570\u636e\u7c7b\u578b\u5747\u4e3a \nJSON\n \u7c7b\u578b", 
+            "title": "\u57fa\u672c\u89c4\u8303"
+        }, 
+        {
+            "location": "/basic/standard/#_1", 
+            "text": "\u4e3a\u4e86\u60a8\u80fd\u591f\u5728\u6d4f\u89c8\u8be5\u6587\u6863\u7684\u540c\u65f6\uff0c \u53ef\u4ee5\u65b9\u4fbf\u7684\u4f7f\u7528\u9875\u9762\u4e0a\u63d0\u4f9b\u7684 API \u6d4b\u8bd5\u5de5\u5177\n\u6765\u6d4b\u8bd5\u67d0\u4e2a\u63a5\u53e3\uff0c \u6587\u6863\u4e2d\u9ed8\u8ba4\u7684API\u5730\u5740\u662f\u7531\u6211\u4eec\u63d0\u4f9b\n\u7684\u6a21\u62df\u6d4b\u8bd5\u73af\u5883\uff0c \u7528\u6765\u534f\u52a9\u60a8\u5feb\u901f\u7684\u7406\u89e3\u548c\u638c\u63e1\u6211\u4eec\u7684API\uff0c \u540c\u65f6\u6211\u4eec\u914d\u5907\u4e86\u4e00\u4e2a\u6d4b\u8bd5\u7684\u524d\u7aef\u73af\u5883,\n\u6d4b\u8bd5\u5730\u5740\uff1a     API http://dev.api.tan14.cn    \u540e\u53f0 http://dev.app.tan14.cn     \u5f85\u60a8\u719f\u6089\u4e86\u6211\u4eec\u7684API\u4e4b\u540e\uff0c \u60a8\u5c31\u53ef\u4ee5\u4f7f\u7528\u6211\u4eec\u7684\u751f\u4ea7\u5730\u5740\u6765\u8fdb\u884c\u60a8\u7684\u4e1a\u52a1\u5f00\u53d1\u4e86,\n\u751f\u4ea7\u5730\u5740\uff1a     API https://api.tan14.cn    \u540e\u53f0 https://app.tan14.cn", 
+            "title": "\u6d4b\u8bd5\u4e0e\u751f\u4ea7\u5730\u5740"
+        }, 
+        {
+            "location": "/basic/standard/#_2", 
+            "text": "\u6240\u6709TAN14-API \u4ec5\u63a5\u53d7  Content-Type  \u4e3a  application/json  \u7684\u8bf7\u6c42\n\u4e14\u8bf7\u6c42\u4f53\u683c\u5f0f\u9700\u4e3a JSON \u7c7b\u578b\n\u6240\u6709\u8bf7\u6c42\u9700\u8981\u643a\u5e26  Tan14-Key  \u5934\u8fdb\u884c\u8eab\u4efd\u9a8c\u8bc1", 
+            "title": "\u8bf7\u6c42"
+        }, 
+        {
+            "location": "/basic/standard/#_3", 
+            "text": "TAN14 CDN \u7684API \u5305\u542b\u4e24\u79cd\u53c2\u6570\uff0c\u4e00\u79cd\u662f  URL\u4e2d\u7684\u5360\u4f4d\u7b26  \uff0c\n\u53e6\u4e00\u79cd\u662f\u8bf7\u6c42\u643a\u5e26\u7684\u53c2\u6570\uff0c\u5b9a\u4e49\u5728 Parameters \u533a\u57df\uff0c \u5176\u53d1\u9001\u65b9\u5f0f\u9075\u5faa\u6807\u51c6\u7684\nRESTful \u6807\u51c6\uff1a \u5373 GET\u8bf7\u6c42\u901a\u8fc7 QueryString \u53d1\u9001\uff0c \u5176\u4ed6\u65b9\u5f0f\u901a\u8fc7 http body\n\u7684\u65b9\u5f0f\u6765\u53d1\u9001\u3002", 
+            "title": "\u53c2\u6570"
+        }, 
+        {
+            "location": "/basic/standard/#_4", 
+            "text": "\u6240\u6709TAN14 API\u63a5\u53e3\u8fd4\u56de\u6570\u636e\u7c7b\u578b\u5747\u4e3a  JSON  \u7c7b\u578b", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/basic/variables_in_url/", 
+            "text": "\u5728 TAN14 CDN \u7684 API \u5b9a\u4e49\u4e2d\uff0c \u90e8\u5206\u63a5\u53e3\u7684URL\u5730\u5740\u4e2d\u662f\u5305\u542b\u8d44\u6e90\u5360\u4f4d\u7b26\u7684\u3002\n\u8d44\u6e90\u5360\u4f4d\u7b26\u5728URL\u4e2d\u4ee5 \n \n\u5927\u5199\u7684\u659c\u4f53\n \n \u5b57\u7b26\u51fa\u73b0\n\u73b0\u5c06\u5e38\u89c1\u7684\u51e0\u4e2a\u8d44\u6e90\u5360\u4f4d\u7b26\u505a\u4e2a\u7b80\u8981\u4ecb\u7ecd\u3002\n\n\n\n\n\n\n\n\n\u5360\u4f4d\u7b26\u540d\u79f0\n\n\n\u542b\u4e49\n\n\n\u5e38\u89c1\u83b7\u53d6\u4f4d\u7f6e\n\n\n\n\n\n\n\n\n\n\nYOUR_APP_PN\n\n\n\u60a8\u5728TAN14 CDN\u7684\u4ea7\u54c1ID\n\n\n\u5728TAN14 App Console \u540e\u53f0\n\u8d26\u6237\n \u9875\u9762\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_CHANNEL_ID\n\n\n\u60a8\u5728TAN14 CDN\u5efa\u7acb\u7684\u67d0\u4e2a\u9891\u9053\u7684ID\n\n\n\u5728TAN14 App Console \u540e\u53f0\n\u8bbe\u7f6e\n \u9875\u9762\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_DOMAIN_ID\n\n\n\u60a8\u5728TAN14 CDN\u7684\u67d0\u4e2a\u9891\u9053\u4e2d\u6dfb\u52a0\u57df\u540d\u6240\u5bf9\u5e94\u7684ID\n\n\n\u4ece \n\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n  \u548c \n\u6dfb\u52a0\u57df\u540d\n\u63a5\u53e3\u5747\u53ef\u4ee5\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_BACKEND_ID\n\n\n\u60a8\u5728TAN14 CDN\u7684\u67d0\u4e2a\u9891\u9053\u4e2d\u6dfb\u52a0\u6e90\u7ad9\u6240\u5bf9\u5e94\u7684ID\n\n\n\u4ece \n\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n  \u548c \n\u6dfb\u52a0\u6e90\u7ad9\n \u63a5\u53e3\u5747\u53ef\u4ee5\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_MCBACKEND_ID\n\n\n\u60a8\u5c06\u67d0\u4e00TAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8b\u7ed1\u5b9a\u5230\u9891\u9053\u540e\u4ea7\u751f\u7684ID\n\n\n\u4ece \n\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n  \u63a5\u53e3\u8fd4\u56de\u7684 mcbackends.id \u5373\u4e3a\u8be5\u503c\n\n\n\n\n\n\nYOUR_APP_MCBACKEND_INS_ID\n\n\n\u60a8\u5728TAN14 CDN\u521b\u5efa\u7684\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8b\u7684ID\n\n\n\u4ece \n\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n  \u53ef\u4ee5\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_MD5_TASK_ID\n\n\n\u60a8\u5728\u4f7f\u7528\u7f13\u5b58\u6821\u9a8c\u529f\u80fd\u65f6\u5019\u4f1a\u83b7\u53d6\u5230\u7684ID\n\n\n\u63d0\u4ea4\u7f13\u5b58\u6821\u9a8c\u4efb\u52a1\n \u4f1a\u83b7\u5f97\u8be5ID\n\n\n\n\n\n\nYOUR_APP_PRELOAD_ID\n\n\n\u60a8\u5728\u6dfb\u52a0\u4e00\u6761\u9884\u52a0\u8f7d\u4efb\u52a1\u65f6\u4f1a\u83b7\u53d6\u5230\u7684ID\n\n\n\u52a0\u8f7d\u4efb\u52a1) \u4f1a\u83b7\u5f97\u8be5ID\n\n\n\n\n\n\nYOUR_APP_REFRESH_ID\n\n\n\u60a8\u5728\u6dfb\u52a0\u4e00\u6761\u5237\u65b0\u4efb\u52a1\u65f6\u4f1a\u83b7\u53d6\u5230\u7684ID\n\n\n\u6dfb\u52a0\u5237\u65b0\u4efb\u52a1\n \u4f1a\u83b7\u5f97\u8be5ID", 
+            "title": "URL\u4e2d\u7684\u53d8\u91cf"
+        }, 
+        {
+            "location": "/basic/authentication/", 
+            "text": "\u76ee\u524d\uff0c TAN14 API \u7684\u8ba4\u8bc1\u662f\u901a\u8fc7\u81ea\u5b9a\u4e49HTTP\u5934\u6765\u5b9e\u73b0\u7684\n\u9700\u8981\u7528\u6237\u5728\u8c03\u7528\u4efb\u4e00\u63a5\u53e3\u7684\u540c\u65f6\uff0c \u63d0\u4f9b\u4e00\u4e2a\u81ea\u5b9a\u4e49\u7684HTTP\u5934\n\nTan14-Key\n \uff0c \u5176\u503c\u4eceTAN14 \u540e\u53f0 \n\u8d26\u6237\n \u9875\u9762\u83b7\u53d6\n\u5982\u4e0b\u56fe\uff1a", 
+            "title": "API\u8ba4\u8bc1"
+        }, 
+        {
+            "location": "/basic/return_code/", 
+            "text": "\u72b6\u6001\u7801\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\n200\n\n\nOK \u6210\u529f\u8fd4\u56de\uff0c\u65e0\u9519\u8bef\n\n\n\n\n\n\n201\n\n\n\u8d44\u6e90\u521b\u5efa\u6210\u529f\n\n\n\n\n\n\n400\n\n\n\u8bf7\u6c42\u53c2\u6570\u9519\u8bef\uff0c\u8be6\u89c1\u8fd4\u56de\u6570\u636e\u4e2d\u7684 detail \u5b57\u6bb5\n\n\n\n\n\n\n401\n\n\n\u9700\u8981\u63d0\u4f9bTan14-Key\u505a\u8ba4\u8bc1\uff0c\u6216\u8005\u63d0\u4f9b\u7684\u503c\u5df2\u8fc7\u671f\n\n\n\n\n\n\n403\n\n\n\u5f53\u524dTan14-Key\u5bf9\u5e94\u7684\u7528\u6237\u6ca1\u6709\u8c03\u7528\u8be5\u63a5\u53e3\u7684\u6743\u9650\n\n\n\n\n\n\n404\n\n\n\u8d44\u6e90\u6ca1\u6709\u627e\u5230\n\n\n\n\n\n\n405\n\n\n\u65b9\u6cd5\u4e0d\u5141\u8bb8\n\n\n\n\n\n\n500\n\n\n\u670d\u52a1\u5668\u9519\u8bef\uff0c \u9047\u89c1\u8be5\u9519\u8bef\u8bf7\u8054\u7cfb\u6211\u4eec\u7684\u7ba1\u7406\u5458\n\n\n\n\n\n\n503\n\n\n\u670d\u52a1\u5668\u4e34\u65f6\u4e0d\u53ef\u7528", 
+            "title": "\u8fd4\u56de\u72b6\u6001\u7801"
+        }, 
+        {
+            "location": "/basic/change_log/", 
+            "text": "2016-04-08 \u4f7f\u7528mkdocs\u91cd\u5236\n\n\n2015-11-27 \u6dfb\u52a0\n\u4e0b\u8f7d\u539f\u59cbCDN\u65e5\u5fd7\n\u7ae0\u8282\n\n\n2015-09-24 \u6dfb\u52a0\n\u5220\u9664\u9891\u9053\n\u63a5\u53e3\n\n\n2015-08-25  v1.0\u7248\u672c\u53d1\u5e03", 
+            "title": "\u66f4\u65b0\u65e5\u5fd7"
+        }, 
+        {
+            "location": "/channel/quick_create/", 
+            "text": "Definition\n\n\n\n\nPOST\n /wp/v2/\nYOUR_APP_PN\n/quick-channel\n\n\n\n\nParameters\n\n\n\n\n\n\n\n\n\u53c2\u6570\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\ndomains\n\n\n\u57df\u540d\u5217\u8868\n\n\n\n\n\n\nbackends\n\n\n\u539f\u7ad9\u5217\u8868\n\n\n\n\n\n\nmc_origin_id\n\n\nMC\u6e90ID\n\n\n\n\n\n\n\n\n\u5165\u53c2\u6837\u4f8b\n\n\n{\n  \ndomains\n: [                                  // Required\n    {\n      \ndomain\n: \nxxx.xxx.xxx\n,                  // Required \u57df\u540d\n      \ncache_rules\n: [                          // Optional \u7f13\u5b58\u89c4\u5219\n        {\n           \norig_path\n: \n/*\n,                   // Required \u5177\u4f53\u7684\u7f13\u5b58\u89c4\u5219\n           \nmax_age\n  : 600 or \nno-cache\n,      // Required \u7f13\u5b58\u65f6\u95f4\u6216\u4e0d\u7f13\u5b58\n           \norder_num\n: 1                       // Required \u7f13\u5b58\u89c4\u5219\u4f18\u5148\u7ea7\uff0c\u6570\u5b57\u5c0f\u4f18\u5148\u7ea7\u9ad8\n        },\n        ...\n      ]\n    }\n  ]\n  \nbackends\n: [                                // Optional \u4e0d\u80fd\u548cmc_origin_id\u540c\u65f6\u4e3a\u7a7a\n    {\n      \nbackend\n: \ndomain or ip\n,               // Required \u6e90\u7ad9 \u57df\u540d\u683c\u5f0f\u6216ip\u683c\u5f0f \u57df\u540d\u6709\u4e14\u4ec5\u6709\u4e00\u4e2a ip\u683c\u5f0f\u53ef\u4ee5\u591a\u4e2a\n      \nport\n   : 80,                           // Optional \u9ed8\u8ba480\n    },\n    ...\n  ],\n  \nmc_origin_id\n: 1                            // Optional MC\u6e90ID \u4e0d\u80fd\u548cbackends\u540c\u65f6\u4e3a\u7a7a   \n}\n\n\n\n\nExample\n\n\n\u8bf7\u6c42\u65b9\u6cd5\n\n\ncurl -X POST \\\n  http://dev.api.tan14.cn/wp/v2/\nYOUR_APP_PN\n/quick-channel \\\n  -H \nContent-Type: application/json\n \\\n  -H \nTan14-Key: \nYOUR_TAN14-KEY\n \\\n  -d \n{\\\ndomains\\\n:[],\\\nbackends\\\n:[]}", 
+            "title": "\u5feb\u901f\u521b\u5efa"
+        }, 
+        {
+            "location": "/channel/quick_create/#definition", 
+            "text": "POST  /wp/v2/ YOUR_APP_PN /quick-channel", 
+            "title": "Definition"
+        }, 
+        {
+            "location": "/channel/quick_create/#parameters", 
+            "text": "\u53c2\u6570  \u8bf4\u660e      domains  \u57df\u540d\u5217\u8868    backends  \u539f\u7ad9\u5217\u8868    mc_origin_id  MC\u6e90ID     \u5165\u53c2\u6837\u4f8b  {\n   domains : [                                  // Required\n    {\n       domain :  xxx.xxx.xxx ,                  // Required \u57df\u540d\n       cache_rules : [                          // Optional \u7f13\u5b58\u89c4\u5219\n        {\n            orig_path :  /* ,                   // Required \u5177\u4f53\u7684\u7f13\u5b58\u89c4\u5219\n            max_age   : 600 or  no-cache ,      // Required \u7f13\u5b58\u65f6\u95f4\u6216\u4e0d\u7f13\u5b58\n            order_num : 1                       // Required \u7f13\u5b58\u89c4\u5219\u4f18\u5148\u7ea7\uff0c\u6570\u5b57\u5c0f\u4f18\u5148\u7ea7\u9ad8\n        },\n        ...\n      ]\n    }\n  ]\n   backends : [                                // Optional \u4e0d\u80fd\u548cmc_origin_id\u540c\u65f6\u4e3a\u7a7a\n    {\n       backend :  domain or ip ,               // Required \u6e90\u7ad9 \u57df\u540d\u683c\u5f0f\u6216ip\u683c\u5f0f \u57df\u540d\u6709\u4e14\u4ec5\u6709\u4e00\u4e2a ip\u683c\u5f0f\u53ef\u4ee5\u591a\u4e2a\n       port    : 80,                           // Optional \u9ed8\u8ba480\n    },\n    ...\n  ],\n   mc_origin_id : 1                            // Optional MC\u6e90ID \u4e0d\u80fd\u548cbackends\u540c\u65f6\u4e3a\u7a7a   \n}", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/channel/quick_create/#example", 
+            "text": "\u8bf7\u6c42\u65b9\u6cd5  curl -X POST \\\n  http://dev.api.tan14.cn/wp/v2/ YOUR_APP_PN /quick-channel \\\n  -H  Content-Type: application/json  \\\n  -H  Tan14-Key:  YOUR_TAN14-KEY  \\\n  -d  {\\ domains\\ :[],\\ backends\\ :[]}", 
+            "title": "Example"
+        }
+    ]
+}

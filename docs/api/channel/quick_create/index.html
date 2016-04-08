@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>快速创建 - Tan14 API文档</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "快速创建";
+    var mkdocs_page_input_path = "channel/quick_create.md";
+    var mkdocs_page_url = "/channel/quick_create/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tan14 API文档</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">首页</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>概述</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../basic/standard/">基本规范</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../basic/variables_in_url/">URL中的变量</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../basic/authentication/">API认证</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../basic/return_code/">返回状态码</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../basic/change_log/">更新日志</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>频道管理</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">快速创建</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#definition">Definition</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#parameters">Parameters</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#example">Example</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tan14 API文档</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>频道管理 &raquo;</li>
+        
+      
+    
+    <li>快速创建</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="definition">Definition</h3>
+<blockquote>
+<p><strong>POST</strong> /wp/v2/<em>YOUR_APP_PN</em>/quick-channel</p>
+</blockquote>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">domains</td>
+<td align="left">域名列表</td>
+</tr>
+<tr>
+<td align="center">backends</td>
+<td align="left">原站列表</td>
+</tr>
+<tr>
+<td align="center">mc_origin_id</td>
+<td align="left">MC源ID</td>
+</tr>
+</tbody>
+</table>
+<p>入参样例</p>
+<pre><code class="json">{
+  &quot;domains&quot;: [                                  // Required
+    {
+      &quot;domain&quot;: &quot;xxx.xxx.xxx&quot;,                  // Required 域名
+      &quot;cache_rules&quot;: [                          // Optional 缓存规则
+        {
+           &quot;orig_path&quot;: &quot;/*&quot;,                   // Required 具体的缓存规则
+           &quot;max_age&quot;  : 600 or &quot;no-cache&quot;,      // Required 缓存时间或不缓存
+           &quot;order_num&quot;: 1                       // Required 缓存规则优先级，数字小优先级高
+        },
+        ...
+      ]
+    }
+  ]
+  &quot;backends&quot;: [                                // Optional 不能和mc_origin_id同时为空
+    {
+      &quot;backend&quot;: &quot;domain or ip&quot;,               // Required 源站 域名格式或ip格式 域名有且仅有一个 ip格式可以多个
+      &quot;port&quot;   : 80,                           // Optional 默认80
+    },
+    ...
+  ],
+  &quot;mc_origin_id&quot;: 1                            // Optional MC源ID 不能和backends同时为空   
+}
+</code></pre>
+
+<h3 id="example">Example</h3>
+<p>请求方法</p>
+<pre><code class="sh">curl -X POST \
+  http://dev.api.tan14.cn/wp/v2/&lt;YOUR_APP_PN&gt;/quick-channel \
+  -H &quot;Content-Type: application/json&quot; \
+  -H &quot;Tan14-Key: &lt;YOUR_TAN14-KEY&gt;&quot; \
+  -d &quot;{\&quot;domains\&quot;:[],\&quot;backends\&quot;:[]}&quot;
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../basic/change_log/" class="btn btn-neutral" title="更新日志"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016, TAN14</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../basic/change_log/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>

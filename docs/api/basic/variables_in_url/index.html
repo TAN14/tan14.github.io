@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>URL中的变量 - Tan14 API文档</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "URL中的变量";
+    var mkdocs_page_input_path = "basic/variables_in_url.md";
+    var mkdocs_page_url = "/basic/variables_in_url/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tan14 API文档</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">首页</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>概述</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../standard/">基本规范</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">URL中的变量</a>
+        
+            <ul>
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../authentication/">API认证</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../return_code/">返回状态码</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../change_log/">更新日志</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>频道管理</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/quick_create/">快速创建</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tan14 API文档</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>概述 &raquo;</li>
+        
+      
+    
+    <li>URL中的变量</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>在 TAN14 CDN 的 API 定义中， 部分接口的URL地址中是包含资源占位符的。
+资源占位符在URL中以 <strong> <em>大写的斜体</em> </strong> 字符出现
+现将常见的几个资源占位符做个简要介绍。</p>
+<table>
+<thead>
+<tr>
+<th>占位符名称</th>
+<th>含义</th>
+<th>常见获取位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>YOUR_APP_PN</em></td>
+<td>您在TAN14 CDN的产品ID</td>
+<td>在TAN14 App Console 后台<strong>账户</strong> 页面获取</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_CHANNEL_ID</em></td>
+<td>您在TAN14 CDN建立的某个频道的ID</td>
+<td>在TAN14 App Console 后台<strong>设置</strong> 页面获取</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_DOMAIN_ID</em></td>
+<td>您在TAN14 CDN的某个频道中添加域名所对应的ID</td>
+<td>从 <a href="../../docs/查询单个频道信息">查询单个频道信息</a>  和 <a href="../../docs/添加一个新的域名">添加域名</a>接口均可以获取</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_BACKEND_ID</em></td>
+<td>您在TAN14 CDN的某个频道中添加源站所对应的ID</td>
+<td>从 <a href="../../docs/查询单个频道信息">查询单个频道信息</a>  和 <a href="../../docs/添加一个新的源站">添加源站</a> 接口均可以获取</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_MCBACKEND_ID</em></td>
+<td>您将某一TAN14 CDN网络存储实例绑定到频道后产生的ID</td>
+<td>从 <a href="../../docs/查询单个频道信息">查询单个频道信息</a>  接口返回的 mcbackends.id 即为该值</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_MCBACKEND_INS_ID</em></td>
+<td>您在TAN14 CDN创建的网络存储实例的ID</td>
+<td>从 <a href="../../docs/查询名下已开通网络存储列表">查询名下已开通网络存储列表</a>  可以获取</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_MD5_TASK_ID</em></td>
+<td>您在使用缓存校验功能时候会获取到的ID</td>
+<td><a href="../../docs/提交校验任务">提交缓存校验任务</a> 会获得该ID</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_PRELOAD_ID</em></td>
+<td>您在添加一条预加载任务时会获取到的ID</td>
+<td>加载任务) 会获得该ID</td>
+</tr>
+<tr>
+<td><em>YOUR_APP_REFRESH_ID</em></td>
+<td>您在添加一条刷新任务时会获取到的ID</td>
+<td><a href="../../docs/添加刷新任务">添加刷新任务</a> 会获得该ID</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../authentication/" class="btn btn-neutral float-right" title="API认证">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../standard/" class="btn btn-neutral" title="基本规范"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016, TAN14</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../standard/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../authentication/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
