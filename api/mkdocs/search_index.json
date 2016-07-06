@@ -1,0 +1,1249 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    api_doc.md \n    general.md\n    channel_mgr.md\n    domain_mgr.md\n    origin_site.md\n    Net_storage.md\n    secur_setting.md\n    cache_raw.md\n    cotent_raw.md\n    cache_check.md", 
+            "title": "\u9996\u9875"
+        }, 
+        {
+            "location": "/#welcome-to-mkdocs", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Welcome to MkDocs"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    api_doc.md \n    general.md\n    channel_mgr.md\n    domain_mgr.md\n    origin_site.md\n    Net_storage.md\n    secur_setting.md\n    cache_raw.md\n    cotent_raw.md\n    cache_check.md", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/general/basic_raw/", 
+            "text": "\u6d4b\u8bd5\u4e0e\u751f\u4ea7\u5730\u5740\n\n\u4e3a\u4e86\u60a8\u80fd\u591f\u5728\u6d4f\u89c8\u8be5\u6587\u6863\u7684\u540c\u65f6\uff0c \u53ef\u4ee5\u65b9\u4fbf\u7684\u4f7f\u7528\u9875\u9762\u4e0a\u63d0\u4f9b\u7684 API \u6d4b\u8bd5\u5de5\u5177\n\u6765\u6d4b\u8bd5\u67d0\u4e2a\u63a5\u53e3\uff0c \u6587\u6863\u4e2d\u9ed8\u8ba4\u7684API\u5730\u5740\u00a0\nhttp://dev.api.tan14.cn\n\u00a0\u662f\u7531\u6211\u4eec\u63d0\u4f9b\n\u7684\u6a21\u62df\u6d4b\u8bd5\u73af\u5883\uff0c \u7528\u6765\u534f\u52a9\u60a8\u5feb\u901f\u7684\u7406\u89e3\u548c\u638c\u63e1\u6211\u4eec\u7684API\uff0c \u540c\u65f6\u6211\u4eec\u914d\u5907\u4e86\u4e00\u4e2a\n\u6d4b\u8bd5\u7684\u524d\u7aef\u73af\u5883\uff1a\u00a0\nhttp://dev.app.tan14.cn\n\u00a0\u4f9b\u60a8\u4f7f\u7528\n\u5f85\u60a8\u719f\u6089\u4e86\u6211\u4eec\u7684API\u4e4b\u540e\uff0c \u60a8\u5c31\u53ef\u4ee5\u4f7f\u7528\u6211\u4eec\u7684\u751f\u4ea7\u5730\u5740\u6765\u8fdb\u884c\u60a8\u7684\u4e1a\u52a1\u5f00\u53d1\u4e86\uff0c\n\u751f\u4ea7\u5730\u5740\u662f\uff1a\nAPI\u5730\u5740 \uff1a\u00a0\nhttps://api.tan14.cn\n\n\u540e\u53f0\u5730\u5740 \uff1a\u00a0\nhttps://app.tan14.cn\n\n\n\u8bf7\u6c42\n\n\n\u6240\u6709TAN14 API \u4ec5\u63a5\u53d7\u00a0\nContent-Type\n\u00a0\u4e3a\u00a0\napplication/json\n\u00a0\u7684\u8bf7\u6c42\n\u4e14\u8bf7\u6c42\u4f53\u683c\u5f0f\u9700\u4e3a\nJSON\n\u7c7b\u578b\n\u6240\u6709\u8bf7\u6c42\u9700\u8981\u643a\u5e26\u00a0\nTan14-Key\n\u00a0\u5934\u8fdb\u884c\u8eab\u4efd\u9a8c\u8bc1\n\n\n\u53c2\u6570\n\n\nTAN14 CDN \u7684API \u5305\u542b\u4e24\u79cd\u53c2\u6570\uff0c\u4e00\u79cd\u662f\u00a0\nURL\u4e2d\u7684\u5360\u4f4d\u7b26\n\u00a0\uff0c\n\u53e6\u4e00\u79cd\u662f\u8bf7\u6c42\u643a\u5e26\u7684\u53c2\u6570\uff0c\u5b9a\u4e49\u5728 Parameters \u533a\u57df\uff0c \u5176\u53d1\u9001\u65b9\u5f0f\u9075\u5faa\u6807\u51c6\u7684\nRESTful \u6807\u51c6\uff1a \u5373 GET\u8bf7\u6c42\u901a\u8fc7 QueryString \u53d1\u9001\uff0c \u5176\u4ed6\u65b9\u5f0f\u901a\u8fc7 http body\n\u7684\u65b9\u5f0f\u6765\u53d1\u9001\u3002\n\n\n\u54cd\u5e94\n\n\n\u6240\u6709TAN14 API\u63a5\u53e3\u8fd4\u56de\u6570\u636e\u7c7b\u578b\u5747\u4e3a\u00a0JSON\u00a0\u7c7b\u578b", 
+            "title": "\u57fa\u672c\u89c4\u8303"
+        }, 
+        {
+            "location": "/general/url_var/", 
+            "text": "\u5728 TAN14 CDN \u7684 API \u5b9a\u4e49\u4e2d\uff0c \u90e8\u5206\u63a5\u53e3\u7684URL\u5730\u5740\u4e2d\u662f\u5305\u542b\u8d44\u6e90\u5360\u4f4d\u7b26\u7684\u3002\n\u8d44\u6e90\u5360\u4f4d\u7b26\u5728URL\u4e2d\u4ee5\u00a0\n\u5927\u5199\u7684\u659c\u4f53\u00a0\n\u5b57\u7b26\u51fa\u73b0\n\u73b0\u5c06\u5e38\u89c1\u7684\u51e0\u4e2a\u8d44\u6e90\u5360\u4f4d\u7b26\u505a\u4e2a\u7b80\u8981\u4ecb\u7ecd\uff1a\n\n\n\n\n\n\n\n\n\u5360\u4f4d\u7b26\u540d\u79f0\n\n\n\u542b\u4e49\n\n\n\u5e38\u89c1\u83b7\u53d6\u4f4d\u7f6e\n\n\n\n\n\n\n\n\n\n\nYOUR_APP_PN\n\n\n\u60a8\u5728TAN14 CDN\u7684\u4ea7\u54c1ID\n\n\n\u5728TAN14 App Console \u540e\u53f0\n\u8d26\u6237\n\u00a0\u9875\u9762\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_CHANNEL_ID\n\n\n\u60a8\u5728TAN14 CDN\u5efa\u7acb\u7684\u67d0\u4e2a\u9891\u9053\u7684ID\n\n\n\u5728TAN14 App Console \u540e\u53f0\n\u8bbe\u7f6e\n\u00a0\u9875\u9762\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_DOMAIN_ID\n\n\n\u60a8\u5728TAN14 CDN\u7684\u67d0\u4e2a\u9891\u9053\u4e2d\u6dfb\u52a0\u57df\u540d\u6240\u5bf9\u5e94\u7684ID\n\n\n\u4ece\u00a0\n\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n\u00a0\u548c\u00a0\n\u6dfb\u52a0\u57df\u540d\n\u63a5\u53e3\u5747\u53ef\u4ee5\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_BACKEND_ID\n\n\n\u60a8\u5728TAN14 CDN\u7684\u67d0\u4e2a\u9891\u9053\u4e2d\u6dfb\u52a0\u6e90\u7ad9\u6240\u5bf9\u5e94\u7684ID\n\n\n\u4ece\u00a0\n\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n\u00a0\u548c\u00a0\n\u6dfb\u52a0\u6e90\u7ad9\n\u00a0\u63a5\u53e3\u5747\u53ef\u4ee5\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_MCBACKEND_ID\n\n\n\u60a8\u5c06\u67d0\u4e00TAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8b\u7ed1\u5b9a\u5230\u9891\u9053\u540e\u4ea7\u751f\u7684ID\n\n\n\u4ece\u00a0\n\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n\u00a0\u63a5\u53e3\u8fd4\u56de\u7684 mcbackends.id \u5373\u4e3a\u8be5\u503c\n\n\n\n\n\n\nYOUR_APP_MCBACKEND_INS_ID\n\n\n\u60a8\u5728TAN14 CDN\u521b\u5efa\u7684\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8b\u7684ID\n\n\n\u4ece\u00a0\n\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n\u00a0\u53ef\u4ee5\u83b7\u53d6\n\n\n\n\n\n\nYOUR_APP_MD5_TASK_ID\n\n\n\u60a8\u5728\u4f7f\u7528\u7f13\u5b58\u6821\u9a8c\u529f\u80fd\u65f6\u5019\u4f1a\u83b7\u53d6\u5230\u7684ID\n\n\n\u63d0\u4ea4\u7f13\u5b58\u6821\u9a8c\u4efb\u52a1\n\u00a0\u4f1a\u83b7\u5f97\u8be5ID\n\n\n\n\n\n\nYOUR_APP_PRELOAD_ID\n\n\n\u60a8\u5728\u6dfb\u52a0\u4e00\u6761\u9884\u52a0\u8f7d\u4efb\u52a1\u65f6\u4f1a\u83b7\u53d6\u5230\u7684ID\n\n\n\u6dfb\u52a0\u9884\u52a0\u8f7d\u4efb\u52a1\n\u00a0\u4f1a\u83b7\u5f97\u8be5ID\n\n\n\n\n\n\nYOUR_APP_REFRESH_ID\n\n\n\u60a8\u5728\u6dfb\u52a0\u4e00\u6761\u5237\u65b0\u4efb\u52a1\u65f6\u4f1a\u83b7\u53d6\u5230\u7684ID\n\n\n\u6dfb\u52a0\u5237\u65b0\u4efb\u52a1\n\u00a0\u4f1a\u83b7\u5f97\u8be5ID\n\n\n\n\n\n\n\n\n\u63d0\u793a\n\uff1a\n\n\n\u5176\u4ed6\u53ef\u80fd\u672a\u63d0\u53ca\u7684\u5360\u4f4d\u7b26\uff0c \u8bf7\u4ee5\u5177\u4f53\u6587\u6863\u4e2d\u7684\u63cf\u8ff0\u4e3a\u51c6", 
+            "title": "URL\u4e2d\u7684\u53d8\u91cf"
+        }, 
+        {
+            "location": "/general/api_auth/", 
+            "text": "\u76ee\u524d\uff0c TAN14 API \u7684\u8ba4\u8bc1\u662f\u901a\u8fc7\u81ea\u5b9a\u4e49HTTP\u5934\u6765\u5b9e\u73b0\u7684\n\u9700\u8981\u7528\u6237\u5728\u8c03\u7528\u4efb\u4e00\u63a5\u53e3\u7684\u540c\u65f6\uff0c \u63d0\u4f9b\u4e00\u4e2a\u81ea\u5b9a\u4e49\u7684HTTP\u5934\n\nTan14-Key\n\u00a0\uff0c \u5176\u503c\u4eceTAN14 \u540e\u53f0\u00a0\n\u8d26\u6237\n\u00a0\u9875\u9762\u83b7\u53d6\n\u5982\u4e0b\u56fe\uff1a", 
+            "title": "api\u7684\u8ba4\u8bc1"
+        }, 
+        {
+            "location": "/general/return_value/", 
+            "text": "\u72b6\u6001\u7801\n\n\n\u610f\u4e49\n\n\n\n\n\n\n\n\n\n\n200\n\n\n\u63a5\u53e3\u6210\u529f\u8fd4\u56de\n\n\n\n\n\n\n201\n\n\n\u8d44\u6e90\u521b\u5efa\u6210\u529f\n\n\n\n\n\n\n400\n\n\n\u8bf7\u6c42\u53c2\u6570\u9519\u8bef\uff0c\u8be6\u89c1\u8fd4\u56de\u6570\u636e\u4e2d\u7684 detail \u5b57\u6bb5\n\n\n\n\n\n\n401\n\n\n\u9700\u8981\u63d0\u4f9bTan14-Key\u505a\u8ba4\u8bc1\uff0c\u6216\u8005\u63d0\u4f9b\u7684\u503c\u5df2\u8fc7\u671f\n\n\n\n\n\n\n403\n\n\n\u5f53\u524dTan14-Key\u5bf9\u5e94\u7684\u7528\u6237\u6ca1\u6709\u8c03\u7528\u8be5\u63a5\u53e3\u7684\u6743\u9650\n\n\n\n\n\n\n404\n\n\n\u8d44\u6e90\u6ca1\u6709\u627e\u5230\n\n\n\n\n\n\n405\n\n\n\u65b9\u6cd5\u4e0d\u5141\u8bb8\n\n\n\n\n\n\n500\n\n\n\u670d\u52a1\u5668\u9519\u8bef\uff0c \u9047\u89c1\u8be5\u9519\u8bef\u8bf7\u8054\u7cfb\u6211\u4eec\u7684\u7ba1\u7406\u5458\n\n\n\n\n\n\n503\n\n\n\u670d\u52a1\u5668\u4e34\u65f6\u4e0d\u53ef\u7528\n\n\n\n\n\n\n\n\n\u63d0\u793a\n\n\n\u5173\u4e8e\u63a5\u53e3\u8fd4\u56de400\u9519\u8bef\uff0c \u591a\u6570\u662f\u7531\u4e8e\u7528\u6237\u63d0\u4f9b\u7684\u53c2\u6570\u4e0d\u5408\u6cd5\u5bfc\u81f4\uff0c \u5177\u4f53\u539f\u56e0\u53c2\u89c1\u63a5\u53e3\u8fd4\u56deJSON\u6570\u636e\u4e2d\u7684detail\u952e\u6240\u63cf\u8ff0\u7684\u539f\u56e0", 
+            "title": "\u5e38\u89c1\u8fd4\u56de"
+        }, 
+        {
+            "location": "/general/update_log/", 
+            "text": "2015-11-27 \u6dfb\u52a0\n\u4e0b\u8f7d\u539f\u59cbCDN\u65e5\u5fd7\n\u7ae0\u8282\n\n\n2015-09-24 \u6dfb\u52a0\n\u5220\u9664\u9891\u9053\n\u63a5\u53e3\n\n\n2015-08-25 v1.0\u7248\u672c\u53d1\u5e03", 
+            "title": "\u66f4\u65b0\u65e5\u5fd7"
+        }, 
+        {
+            "location": "/channel/quick_channel/", 
+            "text": "\u5feb\u901f\u521b\u5efa\u9891\u9053\n\n\n\u8be5\u63a5\u53e3\u7528\u4e8e\u5feb\u901f\u521b\u5efa\u4e00\u4e2a\u9891\u9053\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/quick-channel\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n{\n    \"domains\": [                                  // M \n    {\n        \"domain\": \"xxx.xxx.xxx\",                  // M \u57df\u540d\n        \"cache_rules\": [                          // O \u7f13\u5b58\u89c4\u5219\n        {\n            \"orig_path\": \"/*\",                   // M \u5177\u4f53\u7684\u7f13\u5b58\u89c4\u5219\n            \"max_age\"  : 600 or \"no-cache\",      // M \u7f13\u5b58\u65f6\u95f4\u6216\u4e0d\u7f13\u5b58\n            \"order_num\": 1                       // M \u7f13\u5b58\u89c4\u5219\u4f18\u5148\u7ea7\uff0c\u6570\u5b57\u5c0f\u4f18\u5148\u7ea7\u9ad8\n        },\n        ...\n    ]\n    }\n]\n\"backends\": [                                // O \u4e0d\u80fd\u548cmc_origin_id\u540c\u65f6\u4e3a\u7a7a\n    {\n  \"backend\": \"domain or ip\",               // M \u6e90\u7ad9 \u57df\u540d\u683c\u5f0f\u6216ip\u683c\u5f0f \u57df\u540d\u6709\u4e14\u4ec5\u6709\u4e00\u4e2a ip\u683c\u5f0f\u53ef\u4ee5\u591a\u4e2a\n  \"port\"   : 80,                           // O \u9ed8\u8ba480\n    },\n    ...\n],\n\"mc_origin_id\": 1                            // O MC\u6e90ID \u4e0d\u80fd\u548cbackends\u540c\u65f6\u4e3a\u7a7a   \n}\n\n\n\n\u54cd\u5e94\n\n\n\u65e0", 
+            "title": "\u5feb\u901f\u521b\u5efa\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/quick_channel/#_1", 
+            "text": "\u8be5\u63a5\u53e3\u7528\u4e8e\u5feb\u901f\u521b\u5efa\u4e00\u4e2a\u9891\u9053", 
+            "title": "\u5feb\u901f\u521b\u5efa\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/quick_channel/#_2", 
+            "text": "POST     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/quick-channel", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/quick_channel/#_3", 
+            "text": "{\n    \"domains\": [                                  // M \n    {\n        \"domain\": \"xxx.xxx.xxx\",                  // M \u57df\u540d\n        \"cache_rules\": [                          // O \u7f13\u5b58\u89c4\u5219\n        {\n            \"orig_path\": \"/*\",                   // M \u5177\u4f53\u7684\u7f13\u5b58\u89c4\u5219\n            \"max_age\"  : 600 or \"no-cache\",      // M \u7f13\u5b58\u65f6\u95f4\u6216\u4e0d\u7f13\u5b58\n            \"order_num\": 1                       // M \u7f13\u5b58\u89c4\u5219\u4f18\u5148\u7ea7\uff0c\u6570\u5b57\u5c0f\u4f18\u5148\u7ea7\u9ad8\n        },\n        ...\n    ]\n    }\n]\n\"backends\": [                                // O \u4e0d\u80fd\u548cmc_origin_id\u540c\u65f6\u4e3a\u7a7a\n    {\n  \"backend\": \"domain or ip\",               // M \u6e90\u7ad9 \u57df\u540d\u683c\u5f0f\u6216ip\u683c\u5f0f \u57df\u540d\u6709\u4e14\u4ec5\u6709\u4e00\u4e2a ip\u683c\u5f0f\u53ef\u4ee5\u591a\u4e2a\n  \"port\"   : 80,                           // O \u9ed8\u8ba480\n    },\n    ...\n],\n\"mc_origin_id\": 1                            // O MC\u6e90ID \u4e0d\u80fd\u548cbackends\u540c\u65f6\u4e3a\u7a7a   \n}", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/quick_channel/#_4", 
+            "text": "\u65e0", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/query_channel_list/", 
+            "text": "\u67e5\u8be2\u9891\u9053\u5217\u8868\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channnel/list\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u6ce8\u610f:\u8be5\u63a5\u53e3\u8fd4\u56de\u7ed3\u679c\u4e3alist\u7ed3\u6784\uff0c\u5177\u4f53\u5bf9\u8c61\u7ed3\u6784\u8bf7\u53c2\u8003\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f", 
+            "title": "\u67e5\u8be2\u9891\u9053\u5217\u8868"
+        }, 
+        {
+            "location": "/channel/query_channel_list/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u9891\u9053\u5217\u8868"
+        }, 
+        {
+            "location": "/channel/query_channel_list/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channnel/list", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/query_channel_list/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/query_channel_list/#_4", 
+            "text": "\u6ce8\u610f:\u8be5\u63a5\u53e3\u8fd4\u56de\u7ed3\u679c\u4e3alist\u7ed3\u6784\uff0c\u5177\u4f53\u5bf9\u8c61\u7ed3\u6784\u8bf7\u53c2\u8003\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/query_one_channel/", 
+            "text": "\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u9891\u9053ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u9891\u9053\u540d\u79f0\n\n\n\n\n\n\ntags\n\n\n\u9891\u9053\u6807\u7b7e\n\n\n\n\n\n\npn\n\n\n\u4ea7\u54c1ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 PN \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nremark\n\n\n\u9891\u9053\u5907\u6ce8\n\n\n\n\n\n\napplied\n\n\n\u5f53applied\u4e3afalse\u65f6\uff0c\u4ee3\u8868\u9891\u9053\u6709\u65b0\u7684\u914d\u7f6e\u5c1a\u672a\u4e0b\u53d1\n\n\n\n\n\n\nonline\n\n\n\u5f53online \u4e3afalse\u65f6\uff0c\u4ee3\u8868\u5f53\u524d\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u4e0d\u53ef\u7528\uff0c\u9700\u8981\u9996\u5148\u542f\u7528\u8be5\u9891\u9053\n\n\n\n\n\n\ndomains\n\n\n\u9891\u9053\u4e0b\u7684\u57df\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u57df\u540d\n\n\n\n\n\n\nbackends\n\n\n\u9891\u9053\u4e0b\u7684\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9\n\n\n\n\n\n\nmcbackends\n\n\n\u9891\u9053\u4e0b\u7684MC\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n\n\n\n\n\n\nsecurity\n\n\n\u9891\u9053\u7684\u5b89\u5168\u8bbe\u7f6e\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355\n\n\n\n\n\n\ncreated\n\n\n\u9891\u9053\u7684\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f"
+        }, 
+        {
+            "location": "/channel/query_one_channel/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u5355\u4e2a\u9891\u9053\u4fe1\u606f"
+        }, 
+        {
+            "location": "/channel/query_one_channel/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/query_one_channel/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/query_one_channel/#_4", 
+            "text": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e     \u5b57\u6bb5  \u8bf4\u660e      id  \u9891\u9053ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    name  \u9891\u9053\u540d\u79f0    tags  \u9891\u9053\u6807\u7b7e    pn  \u4ea7\u54c1ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 PN \u7684\u771f\u5b9e\u503c    remark  \u9891\u9053\u5907\u6ce8    applied  \u5f53applied\u4e3afalse\u65f6\uff0c\u4ee3\u8868\u9891\u9053\u6709\u65b0\u7684\u914d\u7f6e\u5c1a\u672a\u4e0b\u53d1    online  \u5f53online \u4e3afalse\u65f6\uff0c\u4ee3\u8868\u5f53\u524d\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u4e0d\u53ef\u7528\uff0c\u9700\u8981\u9996\u5148\u542f\u7528\u8be5\u9891\u9053    domains  \u9891\u9053\u4e0b\u7684\u57df\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u57df\u540d    backends  \u9891\u9053\u4e0b\u7684\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9    mcbackends  \u9891\u9053\u4e0b\u7684MC\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868    security  \u9891\u9053\u7684\u5b89\u5168\u8bbe\u7f6e\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355    created  \u9891\u9053\u7684\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/create_channel/", 
+            "text": "\u521b\u5efa\u9891\u9053\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channnel\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nname(required):string       \u9891\u9053\u540d\u79f0, \u4fbf\u4e8e\u67e5\u627e\u8bb0\u5fc6\n\nremark:string           \u5907\u6ce8\u4fe1\u606f, \u4ec5\u4f9b\u8bb0\u5f55\u8bb0\u5fc6\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u9891\u9053ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u9891\u9053\u540d\u79f0\n\n\n\n\n\n\ntags\n\n\n\u9891\u9053\u6807\u7b7e\n\n\n\n\n\n\npn\n\n\n\u4ea7\u54c1ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 PN \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nremark\n\n\n\u9891\u9053\u5907\u6ce8\n\n\n\n\n\n\napplied\n\n\n\u5f53applied\u4e3afalse\u65f6\uff0c\u4ee3\u8868\u9891\u9053\u6709\u65b0\u7684\u914d\u7f6e\u5c1a\u672a\u4e0b\u53d1\n\n\n\n\n\n\nonline\n\n\n\u5f53online \u4e3afalse\u65f6\uff0c\u4ee3\u8868\u5f53\u524d\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u4e0d\u53ef\u7528\uff0c\u9700\u8981\u9996\u5148\u542f\u7528\u8be5\u9891\u9053\n\n\n\n\n\n\ndomains\n\n\n\u9891\u9053\u4e0b\u7684\u57df\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u57df\u540d\n\n\n\n\n\n\nbackends\n\n\n\u9891\u9053\u4e0b\u7684\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9\n\n\n\n\n\n\nmcbackends\n\n\n\u9891\u9053\u4e0b\u7684MC\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n\n\n\n\n\n\nsecurity\n\n\n\u9891\u9053\u7684\u5b89\u5168\u8bbe\u7f6e\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355\n\n\n\n\n\n\ncreated\n\n\n\u9891\u9053\u7684\u521b\u5efa\u65f6\u95f4\n\n\n\n\n\n\n***", 
+            "title": "\u521b\u5efa\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/create_channel/#_1", 
+            "text": "", 
+            "title": "\u521b\u5efa\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/create_channel/#_2", 
+            "text": "POST     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channnel", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/create_channel/#_3", 
+            "text": "name(required):string       \u9891\u9053\u540d\u79f0, \u4fbf\u4e8e\u67e5\u627e\u8bb0\u5fc6\n\nremark:string           \u5907\u6ce8\u4fe1\u606f, \u4ec5\u4f9b\u8bb0\u5f55\u8bb0\u5fc6", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/create_channel/#_4", 
+            "text": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e     \u5b57\u6bb5  \u8bf4\u660e      id  \u9891\u9053ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    name  \u9891\u9053\u540d\u79f0    tags  \u9891\u9053\u6807\u7b7e    pn  \u4ea7\u54c1ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 PN \u7684\u771f\u5b9e\u503c    remark  \u9891\u9053\u5907\u6ce8    applied  \u5f53applied\u4e3afalse\u65f6\uff0c\u4ee3\u8868\u9891\u9053\u6709\u65b0\u7684\u914d\u7f6e\u5c1a\u672a\u4e0b\u53d1    online  \u5f53online \u4e3afalse\u65f6\uff0c\u4ee3\u8868\u5f53\u524d\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u4e0d\u53ef\u7528\uff0c\u9700\u8981\u9996\u5148\u542f\u7528\u8be5\u9891\u9053    domains  \u9891\u9053\u4e0b\u7684\u57df\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u57df\u540d    backends  \u9891\u9053\u4e0b\u7684\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9    mcbackends  \u9891\u9053\u4e0b\u7684MC\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868    security  \u9891\u9053\u7684\u5b89\u5168\u8bbe\u7f6e\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355    created  \u9891\u9053\u7684\u521b\u5efa\u65f6\u95f4    ***", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/update_channel/", 
+            "text": "\u4fee\u6539\u9891\u9053\u4fe1\u606f\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nname:string     \u9891\u9053\u540d\u79f0, \u4fbf\u4e8e\u67e5\u627e\u8bb0\u5fc6\n\nremark:string   \u5907\u6ce8\u4fe1\u606f, \u4ec5\u4f9b\u8bb0\u5f55\u8bb0\u5fc6\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u9891\u9053ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u9891\u9053\u540d\u79f0\n\n\n\n\n\n\ntags\n\n\n\u9891\u9053\u6807\u7b7e\n\n\n\n\n\n\npn\n\n\n\u4ea7\u54c1ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 PN \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nremark\n\n\n\u9891\u9053\u5907\u6ce8\n\n\n\n\n\n\napplied\n\n\n\u5f53applied\u4e3afalse\u65f6\uff0c\u4ee3\u8868\u9891\u9053\u6709\u65b0\u7684\u914d\u7f6e\u5c1a\u672a\u4e0b\u53d1\n\n\n\n\n\n\nonline\n\n\n\u5f53online \u4e3afalse\u65f6\uff0c\u4ee3\u8868\u5f53\u524d\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u4e0d\u53ef\u7528\uff0c\u9700\u8981\u9996\u5148\u542f\u7528\u8be5\u9891\u9053\n\n\n\n\n\n\ndomains\n\n\n\u9891\u9053\u4e0b\u7684\u57df\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u57df\u540d\n\n\n\n\n\n\nbackends\n\n\n\u9891\u9053\u4e0b\u7684\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9\n\n\n\n\n\n\nmcbackends\n\n\n\u9891\u9053\u4e0b\u7684MC\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n\n\n\n\n\n\nsecurity\n\n\n\u9891\u9053\u7684\u5b89\u5168\u8bbe\u7f6e\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355\n\n\n\n\n\n\ncreated\n\n\n\u9891\u9053\u7684\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u4fee\u6539\u9891\u9053\u4fe1\u606f"
+        }, 
+        {
+            "location": "/channel/update_channel/#_1", 
+            "text": "", 
+            "title": "\u4fee\u6539\u9891\u9053\u4fe1\u606f"
+        }, 
+        {
+            "location": "/channel/update_channel/#_2", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/update_channel/#_3", 
+            "text": "name:string     \u9891\u9053\u540d\u79f0, \u4fbf\u4e8e\u67e5\u627e\u8bb0\u5fc6\n\nremark:string   \u5907\u6ce8\u4fe1\u606f, \u4ec5\u4f9b\u8bb0\u5f55\u8bb0\u5fc6", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/update_channel/#_4", 
+            "text": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e     \u5b57\u6bb5  \u8bf4\u660e      id  \u9891\u9053ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    name  \u9891\u9053\u540d\u79f0    tags  \u9891\u9053\u6807\u7b7e    pn  \u4ea7\u54c1ID\uff0c\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 PN \u7684\u771f\u5b9e\u503c    remark  \u9891\u9053\u5907\u6ce8    applied  \u5f53applied\u4e3afalse\u65f6\uff0c\u4ee3\u8868\u9891\u9053\u6709\u65b0\u7684\u914d\u7f6e\u5c1a\u672a\u4e0b\u53d1    online  \u5f53online \u4e3afalse\u65f6\uff0c\u4ee3\u8868\u5f53\u524d\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u4e0d\u53ef\u7528\uff0c\u9700\u8981\u9996\u5148\u542f\u7528\u8be5\u9891\u9053    domains  \u9891\u9053\u4e0b\u7684\u57df\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u57df\u540d    backends  \u9891\u9053\u4e0b\u7684\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9    mcbackends  \u9891\u9053\u4e0b\u7684MC\u6e90\u7ad9\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868    security  \u9891\u9053\u7684\u5b89\u5168\u8bbe\u7f6e\uff0c\u8bf4\u660e\u89c1\u00a0\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355    created  \u9891\u9053\u7684\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/active_channel/", 
+            "text": "\u5f00\u542f\u9891\u9053\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/active\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\nonline:Boolean      \u8fd4\u56de true \u4ee3\u8868\u542f\u7528\u6210\u529f", 
+            "title": "\u5f00\u542f\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/active_channel/#_1", 
+            "text": "", 
+            "title": "\u5f00\u542f\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/active_channel/#_2", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/active", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/active_channel/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/active_channel/#_4", 
+            "text": "online:Boolean      \u8fd4\u56de true \u4ee3\u8868\u542f\u7528\u6210\u529f", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/pause_channel/", 
+            "text": "\u6682\u505c\u9891\u9053\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/pause\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\nonline:Boolean      \u8fd4\u56de true \u4ee3\u8868\u542f\u7528\u6210\u529f\n\u8bf7\u6ce8\u610f \u6682\u505c\u4e00\u4e2a\u9891\u9053\u5c06\u4f1a\u81ea\u52a8\u5c06\u8be5\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u89e3\u6790\u56de\u6e90\u7ad9", 
+            "title": "\u6682\u505c\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/pause_channel/#_1", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/pause", 
+            "title": "\u6682\u505c\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/pause_channel/#_2", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/pause_channel/#_3", 
+            "text": "online:Boolean      \u8fd4\u56de true \u4ee3\u8868\u542f\u7528\u6210\u529f\n\u8bf7\u6ce8\u610f \u6682\u505c\u4e00\u4e2a\u9891\u9053\u5c06\u4f1a\u81ea\u52a8\u5c06\u8be5\u9891\u9053\u4e0b\u6240\u6709\u57df\u540d\u89e3\u6790\u56de\u6e90\u7ad9", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/issue_channel_conf/", 
+            "text": "\u4e0b\u53d1\u9891\u9053\u914d\u7f6e\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/distribute\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u54cd\u5e94\n\n\napplied:Boolean \u8fd4\u56detrue\u4ee3\u8868\u4e0b\u53d1\u6210\u529f", 
+            "title": "\u4e0b\u53d1\u9891\u9053\u914d\u7f6e"
+        }, 
+        {
+            "location": "/channel/issue_channel_conf/#_1", 
+            "text": "", 
+            "title": "\u4e0b\u53d1\u9891\u9053\u914d\u7f6e"
+        }, 
+        {
+            "location": "/channel/issue_channel_conf/#_2", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/distribute", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/issue_channel_conf/#_3", 
+            "text": "", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/issue_channel_conf/#_4", 
+            "text": "applied:Boolean \u8fd4\u56detrue\u4ee3\u8868\u4e0b\u53d1\u6210\u529f", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/channel/delete_channel/", 
+            "text": "\u5220\u9664\u9891\u9053\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nDELETE\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body", 
+            "title": "\u5220\u9664\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/delete_channel/#_1", 
+            "text": "", 
+            "title": "\u5220\u9664\u9891\u9053"
+        }, 
+        {
+            "location": "/channel/delete_channel/#_2", 
+            "text": "DELETE     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/channel/delete_channel/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/channel/delete_channel/#_4", 
+            "text": "\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/domain/query_domain/", 
+            "text": "\u67e5\u8be2\u57df\u540d\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ndomain\n\n\n\u57df\u540d\n\n\n\n\n\n\npingback\n\n\n\u8be5\u57df\u540d\u7684\u6d4b\u8bd5\u94fe\u63a5\n\n\n\n\n\n\nssl\n\n\n\u5bf9\u5e94CNAME\u662f\u5426\u5f00\u542fhttps\u8bbf\u95ee\n\n\n\n\n\n\nignore_querystring\n\n\n\u662f\u5426\u5ffd\u7565querystring\n\n\n\n\n\n\nremark\n\n\n\u5907\u6ce8\u4fe1\u606f\n\n\n\n\n\n\ncname\n\n\nTAN14 CDN\u4e3a\u6b64\u57df\u540d\u63d0\u4f9b\u7684\u7528\u4e8e\u52a0\u901f\u670d\u52a1\u7684\u5730\u5740\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u57df\u540d\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u57df\u540d\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u4e00\u4e2a\u57df\u540d"
+        }, 
+        {
+            "location": "/domain/query_domain/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u57df\u540d"
+        }, 
+        {
+            "location": "/domain/query_domain/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/domain/query_domain/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/domain/query_domain/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/domain/query_domain/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    domain  \u57df\u540d    pingback  \u8be5\u57df\u540d\u7684\u6d4b\u8bd5\u94fe\u63a5    ssl  \u5bf9\u5e94CNAME\u662f\u5426\u5f00\u542fhttps\u8bbf\u95ee    ignore_querystring  \u662f\u5426\u5ffd\u7565querystring    remark  \u5907\u6ce8\u4fe1\u606f    cname  TAN14 CDN\u4e3a\u6b64\u57df\u540d\u63d0\u4f9b\u7684\u7528\u4e8e\u52a0\u901f\u670d\u52a1\u7684\u5730\u5740    channel_id  \u8be5\u57df\u540d\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u57df\u540d\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/domain/add_domain/", 
+            "text": "\u6dfb\u52a0\u57df\u540d\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\ndomain\uff08required):string         \u8981\u6dfb\u52a0\u7684\u57df\u540d\n\npingback:string                 \u57df\u540d\u6d4b\u8bd5\u94fe\u63a5,\u7528\u4e8e\u6e90\u7ad9\u76d1\u63a7\n\nssl:boolean(false)              \u662f\u5426\u5f00\u542fCNAME\u7684\u8bbf\u95ee\n\nignore_querystring:boolean(false)       \u662f\u5426\u5ffd\u7565querystring\n\ncremark:string                  \u57df\u540d\u5907\u6ce8\u4fe1\u606f\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ndomain\n\n\n\u57df\u540d\n\n\n\n\n\n\npingback\n\n\n\u8be5\u57df\u540d\u7684\u6d4b\u8bd5\u94fe\u63a5\n\n\n\n\n\n\nssl\n\n\n\u5bf9\u5e94CNAME\u662f\u5426\u5f00\u542fhttps\u8bbf\u95ee\n\n\n\n\n\n\nignore_querystring\n\n\n\u662f\u5426\u5ffd\u7565querystring\n\n\n\n\n\n\nremark\n\n\n\u5907\u6ce8\u4fe1\u606f\n\n\n\n\n\n\ncname\n\n\nTAN14 CDN\u4e3a\u6b64\u57df\u540d\u63d0\u4f9b\u7684\u7528\u4e8e\u52a0\u901f\u670d\u52a1\u7684\u5730\u5740\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u57df\u540d\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u57df\u540d\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u57df\u540d"
+        }, 
+        {
+            "location": "/domain/add_domain/#_1", 
+            "text": "", 
+            "title": "\u6dfb\u52a0\u57df\u540d"
+        }, 
+        {
+            "location": "/domain/add_domain/#_2", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/domain/add_domain/#_3", 
+            "text": "domain\uff08required):string         \u8981\u6dfb\u52a0\u7684\u57df\u540d\n\npingback:string                 \u57df\u540d\u6d4b\u8bd5\u94fe\u63a5,\u7528\u4e8e\u6e90\u7ad9\u76d1\u63a7\n\nssl:boolean(false)              \u662f\u5426\u5f00\u542fCNAME\u7684\u8bbf\u95ee\n\nignore_querystring:boolean(false)       \u662f\u5426\u5ffd\u7565querystring\n\ncremark:string                  \u57df\u540d\u5907\u6ce8\u4fe1\u606f", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/domain/add_domain/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/domain/add_domain/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    domain  \u57df\u540d    pingback  \u8be5\u57df\u540d\u7684\u6d4b\u8bd5\u94fe\u63a5    ssl  \u5bf9\u5e94CNAME\u662f\u5426\u5f00\u542fhttps\u8bbf\u95ee    ignore_querystring  \u662f\u5426\u5ffd\u7565querystring    remark  \u5907\u6ce8\u4fe1\u606f    cname  TAN14 CDN\u4e3a\u6b64\u57df\u540d\u63d0\u4f9b\u7684\u7528\u4e8e\u52a0\u901f\u670d\u52a1\u7684\u5730\u5740    channel_id  \u8be5\u57df\u540d\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u57df\u540d\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/domain/update_domain_conf/", 
+            "text": "\u4fee\u6539\u57df\u540d\u8bbe\u7f6e\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n   \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\ndomain\uff08required\uff09:string \u5982\u679c\u8981\u4fee\u6539, \u8bf7\u63d0\u4f9b\u65b0\u7684\u57df\u540d, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\npingback:string         \u5982\u679c\u66f4\u65b0\u57df\u540d, \u5219\u63d0\u4f9b\u65b0\u7684\u6d4b\u8bd5\u94fe\u63a5, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\nssl:boolean         \u662f\u5426\u5f00\u542fCNAME\u8bbf\u95ee\n\nignore_querystring:boolean  \u662f\u5426\u5ffd\u7565query string\n\nremark: string          \u5907\u6ce8\u4fe1\u606f\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ndomain\n\n\n\u57df\u540d\n\n\n\n\n\n\npingback\n\n\n\u8be5\u57df\u540d\u7684\u6d4b\u8bd5\u94fe\u63a5\n\n\n\n\n\n\nssl\n\n\n\u5bf9\u5e94CNAME\u662f\u5426\u5f00\u542fhttps\u8bbf\u95ee\n\n\n\n\n\n\nignore_querystring\n\n\n\u662f\u5426\u5ffd\u7565querystring\n\n\n\n\n\n\nremark\n\n\n\u5907\u6ce8\u4fe1\u606f\n\n\n\n\n\n\ncname\n\n\nTAN14 CDN\u4e3a\u6b64\u57df\u540d\u63d0\u4f9b\u7684\u7528\u4e8e\u52a0\u901f\u670d\u52a1\u7684\u5730\u5740\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u57df\u540d\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u57df\u540d\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u4fee\u6539\u57df\u540d\u8bbe\u7f6e"
+        }, 
+        {
+            "location": "/domain/update_domain_conf/#_1", 
+            "text": "", 
+            "title": "\u4fee\u6539\u57df\u540d\u8bbe\u7f6e"
+        }, 
+        {
+            "location": "/domain/update_domain_conf/#_2", 
+            "text": "PUT      http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/domain/update_domain_conf/#_3", 
+            "text": "domain\uff08required\uff09:string \u5982\u679c\u8981\u4fee\u6539, \u8bf7\u63d0\u4f9b\u65b0\u7684\u57df\u540d, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\npingback:string         \u5982\u679c\u66f4\u65b0\u57df\u540d, \u5219\u63d0\u4f9b\u65b0\u7684\u6d4b\u8bd5\u94fe\u63a5, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\nssl:boolean         \u662f\u5426\u5f00\u542fCNAME\u8bbf\u95ee\n\nignore_querystring:boolean  \u662f\u5426\u5ffd\u7565query string\n\nremark: string          \u5907\u6ce8\u4fe1\u606f", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/domain/update_domain_conf/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/domain/update_domain_conf/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    domain  \u57df\u540d    pingback  \u8be5\u57df\u540d\u7684\u6d4b\u8bd5\u94fe\u63a5    ssl  \u5bf9\u5e94CNAME\u662f\u5426\u5f00\u542fhttps\u8bbf\u95ee    ignore_querystring  \u662f\u5426\u5ffd\u7565querystring    remark  \u5907\u6ce8\u4fe1\u606f    cname  TAN14 CDN\u4e3a\u6b64\u57df\u540d\u63d0\u4f9b\u7684\u7528\u4e8e\u52a0\u901f\u670d\u52a1\u7684\u5730\u5740    channel_id  \u8be5\u57df\u540d\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u57df\u540d\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/domain/delete_domain/", 
+            "text": "\u5220\u9664\u4e00\u4e2a\u57df\u540d\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nDELETE\n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body", 
+            "title": "\u5220\u9664\u4e00\u4e2a\u57df\u540d"
+        }, 
+        {
+            "location": "/domain/delete_domain/#_1", 
+            "text": "", 
+            "title": "\u5220\u9664\u4e00\u4e2a\u57df\u540d"
+        }, 
+        {
+            "location": "/domain/delete_domain/#_2", 
+            "text": "DELETE  http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/domain/delete_domain/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/domain/delete_domain/#_4", 
+            "text": "\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/origin_site/query_ori_site/", 
+            "text": "\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n    \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6\n\n\n\n\n\n\nbackend\n\n\n\u6e90\u7ad9\u7684\u503c\n\n\n\n\n\n\nport\n\n\n\u6e90\u7ad9\u670d\u52a1\u7aef\u53e3\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nstatus\n\n\n\u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/query_ori_site/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u4e00\u4e2a\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/query_ori_site/#_2", 
+            "text": "GET       http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/origin_site/query_ori_site/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/origin_site/query_ori_site/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/origin_site/query_ori_site/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c    name  \u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6    backend  \u6e90\u7ad9\u7684\u503c    port  \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3    channel_id  \u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    status  \u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d    created  \u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/origin_site/add_new_ori_site/", 
+            "text": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u6e90\u7ad9\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n\n\nhttp://dev.api.tan14.cn/wp/v2/[app:PN]]/channel/YOUR_APP_CHANNEL_ID/backend\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nname(required):string           \u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6\n\nbackend(required):string        \u6e90\u7ad9\u5730\u5740, IP \u6216\u8005 \u57df\u540d\n\nport:integer 80             \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3, \u9ed8\u8ba4\u4e3a 80\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6\n\n\n\n\n\n\nbackend\n\n\n\u6e90\u7ad9\u7684\u503c\n\n\n\n\n\n\nport\n\n\n\u6e90\u7ad9\u670d\u52a1\u7aef\u53e3\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nstatus\n\n\n\u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/add_new_ori_site/#_1", 
+            "text": "", 
+            "title": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/add_new_ori_site/#_2", 
+            "text": "POST  http://dev.api.tan14.cn/wp/v2/[app:PN]]/channel/YOUR_APP_CHANNEL_ID/backend", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/origin_site/add_new_ori_site/#_3", 
+            "text": "name(required):string           \u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6\n\nbackend(required):string        \u6e90\u7ad9\u5730\u5740, IP \u6216\u8005 \u57df\u540d\n\nport:integer 80             \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3, \u9ed8\u8ba4\u4e3a 80", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/origin_site/add_new_ori_site/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/origin_site/add_new_ori_site/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c    name  \u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6    backend  \u6e90\u7ad9\u7684\u503c    port  \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3    channel_id  \u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    status  \u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d    created  \u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/origin_site/update_ori_site_conf/", 
+            "text": "\u4fee\u6539\u6e90\u7ad9\u8bbe\u7f6e\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nname(required):string           \u5982\u679c\u8981\u4fee\u6539, \u8bf7\u63d0\u4f9b\u65b0\u7684\u540d\u79f0, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\nbackend(required):string        \u5982\u679c\u66f4\u65b0\u6e90\u7ad9, \u5219\u63d0\u4f9b\u65b0\u7684\u5730\u5740, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\nport:integer 80             \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3, \u5982\u679c\u8981\u4fee\u6539\u8bf7\u63d0\u4f9b\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6\n\n\n\n\n\n\nbackend\n\n\n\u6e90\u7ad9\u7684\u503c\n\n\n\n\n\n\nport\n\n\n\u6e90\u7ad9\u670d\u52a1\u7aef\u53e3\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nstatus\n\n\n\u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u4fee\u6539\u6e90\u7ad9\u8bbe\u7f6e"
+        }, 
+        {
+            "location": "/origin_site/update_ori_site_conf/#_1", 
+            "text": "", 
+            "title": "\u4fee\u6539\u6e90\u7ad9\u8bbe\u7f6e"
+        }, 
+        {
+            "location": "/origin_site/update_ori_site_conf/#_2", 
+            "text": "PUT    http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/origin_site/update_ori_site_conf/#_3", 
+            "text": "name(required):string           \u5982\u679c\u8981\u4fee\u6539, \u8bf7\u63d0\u4f9b\u65b0\u7684\u540d\u79f0, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\nbackend(required):string        \u5982\u679c\u66f4\u65b0\u6e90\u7ad9, \u5219\u63d0\u4f9b\u65b0\u7684\u5730\u5740, \u5426\u5219\u63d0\u4f9b\u539f\u6709\u503c\n\nport:integer 80             \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3, \u5982\u679c\u8981\u4fee\u6539\u8bf7\u63d0\u4f9b", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/origin_site/update_ori_site_conf/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/origin_site/update_ori_site_conf/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c    name  \u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6    backend  \u6e90\u7ad9\u7684\u503c    port  \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3    channel_id  \u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    status  \u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d    created  \u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/origin_site/turn_on_off_site/", 
+            "text": "\u5f00\u542f/\u6682\u505c\u4e00\u4e2a\u6e90\u7ad9\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID/status\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nstatus(required):boolean        true \u5f00\u542f, false \u5173\u95ed\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nname\n\n\n\u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6\n\n\n\n\n\n\nbackend\n\n\n\u6e90\u7ad9\u7684\u503c\n\n\n\n\n\n\nport\n\n\n\u6e90\u7ad9\u670d\u52a1\u7aef\u53e3\n\n\n\n\n\n\nchannel_id\n\n\n\u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nstatus\n\n\n\u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4\n\n\n\n\n\n\n\n\n\u6ce8\u610f\nTAN14 CDN \u652f\u6301\u57df\u540d\u7c7b\u578b\u6216\u8005IP\u7c7b\u578b\u7684\u6e90\u7ad9,\n\u4f46\u662f\u5e76\u4e0d\u80fd\u540c\u65f6\u4f7f\u7528\u8fd9\u4e24\u79cd\u7c7b\u578b\u5730\u5740\u7684\u6e90\u7ad9.\u56e0\n\u6b64\u5982\u679c\u60f3\u8981\u6dfb\u52a0\u65b0\u7c7b\u578b\u7684\u6e90\u7ad9, \u5219\u9700\u8981\u5220\u9664\u6216\u8005\n\u6682\u505c\u539f\u6709\u7684\u6e90\u7ad9\u624d\u53ef\u4ee5\u7ee7\u7eed\u6dfb\u52a0", 
+            "title": "\u5f00\u542f\uff0f\u6682\u505c\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/turn_on_off_site/#_1", 
+            "text": "", 
+            "title": "\u5f00\u542f/\u6682\u505c\u4e00\u4e2a\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/turn_on_off_site/#_2", 
+            "text": "PUT  http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID/status", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/origin_site/turn_on_off_site/#_3", 
+            "text": "status(required):boolean        true \u5f00\u542f, false \u5173\u95ed", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/origin_site/turn_on_off_site/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/origin_site/turn_on_off_site/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6e90\u7ad9\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 BACKEND_ID \u7684\u771f\u5b9e\u503c    name  \u6e90\u7ad9\u540d\u79f0, \u7528\u4e8e\u8bb0\u5fc6    backend  \u6e90\u7ad9\u7684\u503c    port  \u6e90\u7ad9\u670d\u52a1\u7aef\u53e3    channel_id  \u8be5\u6e90\u7ad9\u6240\u5c5e\u9891\u9053,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 CHANNEL_ID \u7684\u771f\u5b9e\u503c    status  \u8be5\u6e90\u7ad9\u4f7f\u7528\u72b6\u6001, true\u4ee3\u8868\u4f7f\u7528\u4e2d    created  \u8be5\u6e90\u7ad9\u6dfb\u52a0\u65f6\u95f4     \u6ce8\u610f\nTAN14 CDN \u652f\u6301\u57df\u540d\u7c7b\u578b\u6216\u8005IP\u7c7b\u578b\u7684\u6e90\u7ad9,\n\u4f46\u662f\u5e76\u4e0d\u80fd\u540c\u65f6\u4f7f\u7528\u8fd9\u4e24\u79cd\u7c7b\u578b\u5730\u5740\u7684\u6e90\u7ad9.\u56e0\n\u6b64\u5982\u679c\u60f3\u8981\u6dfb\u52a0\u65b0\u7c7b\u578b\u7684\u6e90\u7ad9, \u5219\u9700\u8981\u5220\u9664\u6216\u8005\n\u6682\u505c\u539f\u6709\u7684\u6e90\u7ad9\u624d\u53ef\u4ee5\u7ee7\u7eed\u6dfb\u52a0", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/origin_site/delete_ori_site/", 
+            "text": "delete\u5220\u9664\u4e00\u4e2a\u6e90\u7ad9\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nDELETE\n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body", 
+            "title": "\u5220\u9664\u4e00\u4e2a\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/delete_ori_site/#delete", 
+            "text": "", 
+            "title": "delete\u5220\u9664\u4e00\u4e2a\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/origin_site/delete_ori_site/#_1", 
+            "text": "DELETE  http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/origin_site/delete_ori_site/#_2", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/origin_site/delete_ori_site/#_3", 
+            "text": "\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/query_storage/", 
+            "text": "\u67e5\u8be2\u53ef\u7528TAN14\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n \n\n\nhttp://dev.api.tan14.cn/wp/v2/mc/origins\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\nid,\n\n\n\n\n\n\nname\n\n\nTAN14\u7f51\u7edc\u5b58\u50a8\u540d\u79f0\n\n\n\n\n\n\nremark\n\n\n\u5907\u6ce8\n\n\n\n\n\n\ncreated\n\n\n\u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u53ef\u7528TAN14\u7f51\u7edc\u5b58\u50a8\u5217\u8868"
+        }, 
+        {
+            "location": "/net_storage/query_storage/#tan14", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u53ef\u7528TAN14\u7f51\u7edc\u5b58\u50a8\u5217\u8868"
+        }, 
+        {
+            "location": "/net_storage/query_storage/#_1", 
+            "text": "GET    http://dev.api.tan14.cn/wp/v2/mc/origins", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/query_storage/#_2", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/query_storage/#_3", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/query_storage/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  id,    name  TAN14\u7f51\u7edc\u5b58\u50a8\u540d\u79f0    remark  \u5907\u6ce8    created  \u6dfb\u52a0\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/net_storage/query_established_storage/", 
+            "text": "\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\nTAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_INS_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nmc_origin_id\n\n\n\u521b\u5efa\u65f6\u6307\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8\n\n\n\n\n\n\nftp_user\n\n\nftp\u5e10\u53f7\n\n\n\n\n\n\nftp_passwd\n\n\nftp\u5bc6\u7801\n\n\n\n\n\n\ncname\n\n\n\u8be5\u5b58\u50a8\u5b9e\u4f8b\u7684\u5730\u5740\n\n\n\n\n\n\npn\n\n\n\u6240\u5c5e\u4ea7\u54c1(\u5373\u60a8\u81ea\u5df1\u7684PN)\n\n\n\n\n\n\nrsync\n\n\nrsync\u540c\u6b65\u65b9\u5f0f\u4fe1\u606f, \u5177\u4f53\u53c2\u8003\u00a0\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65\n\n\n\n\n\n\ncreated\n\n\n\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868"
+        }, 
+        {
+            "location": "/net_storage/query_established_storage/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u540d\u4e0b\u5df2\u5f00\u901a\u7f51\u7edc\u5b58\u50a8\u5217\u8868"
+        }, 
+        {
+            "location": "/net_storage/query_established_storage/#_2", 
+            "text": "GET    http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/query_established_storage/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/query_established_storage/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/query_established_storage/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  TAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_INS_ID \u7684\u771f\u5b9e\u503c    mc_origin_id  \u521b\u5efa\u65f6\u6307\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8    ftp_user  ftp\u5e10\u53f7    ftp_passwd  ftp\u5bc6\u7801    cname  \u8be5\u5b58\u50a8\u5b9e\u4f8b\u7684\u5730\u5740    pn  \u6240\u5c5e\u4ea7\u54c1(\u5373\u60a8\u81ea\u5df1\u7684PN)    rsync  rsync\u540c\u6b65\u65b9\u5f0f\u4fe1\u606f, \u5177\u4f53\u53c2\u8003\u00a0\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65    created  \u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/net_storage/create_storage/", 
+            "text": "\u7533\u8bf7\u521b\u5efa\u4e00\u4e2aTAN14\u7f51\u7edc\u5b58\u50a8\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n    \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nmc_origin_id:integer            \u6307\u5b9a\u5728\u54ea\u4e00\u4e2aTAN14\u7f51\u7edc\u5b58\u50a8\u4e0a\u521b\u5efa\u5b9e\u4f8bmc_origin_id \u503c\u7684\u53ef\u9009\u8303\u56f4\u4e3a \u8be5\u63a5\u53e3 \u8fd4\u56de\u5217\u8868\u7684ID\u8303\u56f4\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\nTAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_INS_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nmc_origin_id\n\n\n\u521b\u5efa\u65f6\u6307\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8\n\n\n\n\n\n\nftp_user\n\n\nftp\u5e10\u53f7\n\n\n\n\n\n\nftp_passwd\n\n\nftp\u5bc6\u7801\n\n\n\n\n\n\ncname\n\n\n\u8be5\u5b58\u50a8\u5b9e\u4f8b\u7684\u5730\u5740\n\n\n\n\n\n\npn\n\n\n\u6240\u5c5e\u4ea7\u54c1(\u5373\u60a8\u81ea\u5df1\u7684PN)\n\n\n\n\n\n\nrsync\n\n\nrsync\u540c\u6b65\u65b9\u5f0f\u4fe1\u606f, \u5177\u4f53\u53c2\u8003\u00a0\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65\n\n\n\n\n\n\ncreated\n\n\n\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u7533\u8bf7\u521b\u5efa\u4e00\u4e2aTAN14\u7f51\u7edc\u5b58\u50a8"
+        }, 
+        {
+            "location": "/net_storage/create_storage/#tan14", 
+            "text": "", 
+            "title": "\u7533\u8bf7\u521b\u5efa\u4e00\u4e2aTAN14\u7f51\u7edc\u5b58\u50a8"
+        }, 
+        {
+            "location": "/net_storage/create_storage/#_1", 
+            "text": "POST       http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/create_storage/#_2", 
+            "text": "mc_origin_id:integer            \u6307\u5b9a\u5728\u54ea\u4e00\u4e2aTAN14\u7f51\u7edc\u5b58\u50a8\u4e0a\u521b\u5efa\u5b9e\u4f8bmc_origin_id \u503c\u7684\u53ef\u9009\u8303\u56f4\u4e3a \u8be5\u63a5\u53e3 \u8fd4\u56de\u5217\u8868\u7684ID\u8303\u56f4", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/create_storage/#_3", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/create_storage/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  TAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_INS_ID \u7684\u771f\u5b9e\u503c    mc_origin_id  \u521b\u5efa\u65f6\u6307\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8    ftp_user  ftp\u5e10\u53f7    ftp_passwd  ftp\u5bc6\u7801    cname  \u8be5\u5b58\u50a8\u5b9e\u4f8b\u7684\u5730\u5740    pn  \u6240\u5c5e\u4ea7\u54c1(\u5373\u60a8\u81ea\u5df1\u7684PN)    rsync  rsync\u540c\u6b65\u65b9\u5f0f\u4fe1\u606f, \u5177\u4f53\u53c2\u8003\u00a0\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65    created  \u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/net_storage/open_rsync/", 
+            "text": "\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n    \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance/YOUR_APP_MCBACKEND_INS_ID/rsync\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\n\n\n\n\n\ndata_dir\n\n\nrsync\u6a21\u5757\u540d\n\n\n\n\n\n\nuser\n\n\nrsync\u5e10\u53f7\n\n\n\n\n\n\npasswd\n\n\nrsync\u5bc6\u7801\n\n\n\n\n\n\nmcbackend_ins_id\n\n\nTAN14\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID\n\n\n\n\n\n\ncreated\n\n\n\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65"
+        }, 
+        {
+            "location": "/net_storage/open_rsync/#tan14rsync", 
+            "text": "", 
+            "title": "\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65"
+        }, 
+        {
+            "location": "/net_storage/open_rsync/#_1", 
+            "text": "POST       http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance/YOUR_APP_MCBACKEND_INS_ID/rsync", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/open_rsync/#_2", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/open_rsync/#_3", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/open_rsync/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id     data_dir  rsync\u6a21\u5757\u540d    user  rsync\u5e10\u53f7    passwd  rsync\u5bc6\u7801    mcbackend_ins_id  TAN14\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID    created  \u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/net_storage/bind_storage/", 
+            "text": "\u7ed1\u5b9aTAN14\u7f51\u7edc\u5b58\u50a8\u4f5c\u4e3a\u9891\u9053\u6e90\u7ad9\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n    \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/mc/backend\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nmcbackend_ins_id(required):integer      \u8981\u7ed1\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\nURL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nmcbackend_ins_id\n\n\n\u9009\u62e9\u7684\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8b\n\n\n\n\n\n\nchannel_id\n\n\n\u7ed1\u5b9a\u5230\u7684\u9891\u9053\n\n\n\n\n\n\ncreated\n\n\n\u7ed1\u5b9a\u65f6\u95f4", 
+            "title": "\u7ed1\u5b9aTAN14\u7f51\u7edc\u5b58\u50a8\u4f5c\u4e3a\u7f51\u7edc\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/net_storage/bind_storage/#tan14", 
+            "text": "", 
+            "title": "\u7ed1\u5b9aTAN14\u7f51\u7edc\u5b58\u50a8\u4f5c\u4e3a\u9891\u9053\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/net_storage/bind_storage/#_1", 
+            "text": "POST       http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/mc/backend", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/bind_storage/#_2", 
+            "text": "mcbackend_ins_id(required):integer      \u8981\u7ed1\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/bind_storage/#_3", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/bind_storage/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_ID \u7684\u771f\u5b9e\u503c    mcbackend_ins_id  \u9009\u62e9\u7684\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8b    channel_id  \u7ed1\u5b9a\u5230\u7684\u9891\u9053    created  \u7ed1\u5b9a\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/net_storage/stop_bind_storage/", 
+            "text": "\u505c\u6b62\u4f7f\u7528TAN14\u7f51\u7edc\u5b58\u50a8\u4f5c\u4e3a\u9891\u9053\u7684\u6e90\u7ad9\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nDELETE\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/mc/backend/YOUR_APP_MCBACKEND_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u63d0\u793a\n\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body\n\u6b64\u65f6\u9891\u9053\u56de\u5230\u4f7f\u7528\u81ea\u6709\u6e90\u7ad9\u72b6\u6001", 
+            "title": "\u505c\u6b62\u4f7f\u7528TAN14\u7f51\u7edc\u5b58\u50a8\u4f5c\u4e3a\u7f51\u7edc\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/net_storage/stop_bind_storage/#tan14", 
+            "text": "", 
+            "title": "\u505c\u6b62\u4f7f\u7528TAN14\u7f51\u7edc\u5b58\u50a8\u4f5c\u4e3a\u9891\u9053\u7684\u6e90\u7ad9"
+        }, 
+        {
+            "location": "/net_storage/stop_bind_storage/#_1", 
+            "text": "DELETE     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/mc/backend/YOUR_APP_MCBACKEND_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/stop_bind_storage/#_2", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/stop_bind_storage/#_3", 
+            "text": "\u63d0\u793a\n\u63a5\u53e3\u54cd\u5e94HTTP CODE 200 \u5373\u8868\u793a\u5220\u9664\u6210\u529f, \u6ca1\u6709 response body\n\u6b64\u65f6\u9891\u9053\u56de\u5230\u4f7f\u7528\u81ea\u6709\u6e90\u7ad9\u72b6\u6001", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/change_FTP/", 
+            "text": "\u4fee\u6539\u7f51\u7edc\u5b58\u50a8\u7684FTP\u4fe1\u606f\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance/YOUR_APP_MCBACKEND_INS_ID/ftp\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nftp_user:string     \u4fee\u6539\u540e\u7684ftp\u5e10\u53f7\n\nftp_passwd:string   \u4fee\u6539\u540e\u7684ftp\u5bc6\u7801\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\nTAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_INS_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\nmc_origin_id\n\n\n\u521b\u5efa\u65f6\u6307\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8\n\n\n\n\n\n\nftp_user\n\n\nftp\u5e10\u53f7\n\n\n\n\n\n\nftp_passwd\n\n\nftp\u5bc6\u7801\n\n\n\n\n\n\ncname\n\n\n\u8be5\u5b58\u50a8\u5b9e\u4f8b\u7684\u5730\u5740\n\n\n\n\n\n\npn\n\n\n\u6240\u5c5e\u4ea7\u54c1(\u5373\u60a8\u81ea\u5df1\u7684PN)\n\n\n\n\n\n\nrsync\n\n\nrsync\u540c\u6b65\u65b9\u5f0f\u4fe1\u606f, \u5177\u4f53\u53c2\u8003\u00a0\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65\n\n\n\n\n\n\ncreated\n\n\n\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u4fee\u6539\u7f51\u7edc\u5b58\u50a8\u7684FTP\u4fe1\u606f"
+        }, 
+        {
+            "location": "/net_storage/change_FTP/#ftp", 
+            "text": "", 
+            "title": "\u4fee\u6539\u7f51\u7edc\u5b58\u50a8\u7684FTP\u4fe1\u606f"
+        }, 
+        {
+            "location": "/net_storage/change_FTP/#_1", 
+            "text": "PUT    http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/mc/backend/instance/YOUR_APP_MCBACKEND_INS_ID/ftp", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/net_storage/change_FTP/#_2", 
+            "text": "ftp_user:string     \u4fee\u6539\u540e\u7684ftp\u5e10\u53f7\n\nftp_passwd:string   \u4fee\u6539\u540e\u7684ftp\u5bc6\u7801", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/net_storage/change_FTP/#_3", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/net_storage/change_FTP/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  TAN14 CDN\u7f51\u7edc\u5b58\u50a8\u5b9e\u4f8bID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 MCBACKEND_INS_ID \u7684\u771f\u5b9e\u503c    mc_origin_id  \u521b\u5efa\u65f6\u6307\u5b9a\u7684TAN14\u7f51\u7edc\u5b58\u50a8    ftp_user  ftp\u5e10\u53f7    ftp_passwd  ftp\u5bc6\u7801    cname  \u8be5\u5b58\u50a8\u5b9e\u4f8b\u7684\u5730\u5740    pn  \u6240\u5c5e\u4ea7\u54c1(\u5373\u60a8\u81ea\u5df1\u7684PN)    rsync  rsync\u540c\u6b65\u65b9\u5f0f\u4fe1\u606f, \u5177\u4f53\u53c2\u8003\u00a0\u4e3aTAN14\u7f51\u7edc\u5b58\u50a8\u5f00\u901arsync\u540c\u6b65    created  \u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/security/query_blacklist/", 
+            "text": "\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355/\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/blackwhite\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nblackips\n\n\n\u8bbf\u5ba2\u9ed1\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nwhiteips\n\n\n\u8bbf\u5ba2\u767d\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nreferer\n\n\n\u9632\u76d7\u94fe\u9ed1\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nwhite_referers\n\n\n\u9632\u76d7\u94fe\u767d\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nchannel_id\n\n\n\u8bb0\u5f55\u6240\u5c5e\u9891\u9053", 
+            "title": "\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\uff0f\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355"
+        }, 
+        {
+            "location": "/security/query_blacklist/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355/\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355"
+        }, 
+        {
+            "location": "/security/query_blacklist/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/blackwhite", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/security/query_blacklist/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/security/query_blacklist/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/security/query_blacklist/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    blackips  \u8bbf\u5ba2\u9ed1\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    whiteips  \u8bbf\u5ba2\u767d\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    referer  \u9632\u76d7\u94fe\u9ed1\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    white_referers  \u9632\u76d7\u94fe\u767d\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    channel_id  \u8bb0\u5f55\u6240\u5c5e\u9891\u9053", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/security/add_blacklist/", 
+            "text": "\u6dfb\u52a0\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355/\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/blackwhite\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nblackips:string     \u8bbf\u5ba2\u9ed1\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\nwhiteips:string     \u8bbf\u5ba2\u767d\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\nreferer:string      \u9632\u76d7\u94fe\u9ed1\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\nwhite_referers: string  \u9632\u76d7\u94fe\u767d\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nblackips\n\n\n\u8bbf\u5ba2\u9ed1\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nwhiteips\n\n\n\u8bbf\u5ba2\u767d\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nreferer\n\n\n\u9632\u76d7\u94fe\u9ed1\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nwhite_referers\n\n\n\u9632\u76d7\u94fe\u767d\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\n\n\n\n\n\nchannel_id\n\n\n\u8bb0\u5f55\u6240\u5c5e\u9891\u9053\n\n\n\n\n\n\n\n\n\u63d0\u793a\n\u8be5\u63a5\u53e3\u7528\u6765\u8bbe\u7f6e\u9ed1\u767d\u540d\u5355\u5ba2\u6237\u5217\u8868, \u4ee5\u53ca\u9632\u76d7\u94fe\u7684\u9ed1\u767d\u540d\u5355\u5217\u8868\n\u6bcf\u4e00\u9879\u5747\u53ef\u4ee5\u5355\u72ec\u8bbe\u7f6e, \u5373\u4ec5\u9700\u8981\u63d0\u4ea4\u8981\u66f4\u6539\u7684\u4fe1\u606f\u6240\u5c5e\u5b57\u6bb5\u5373\u53ef\n\u6ce8\u610f\n\u8be5\u63a5\u53e3\u96c6\u6dfb\u52a0\u4e0e\u5220\u9664\u4e8e\u4e00\u4f53, \u5373\u5982\u679c\u8981\u5220\u9664\u4e00\u9879, \u5219\u63d0\u4ea4\u4f59\u4e0b\u9879\u7531\u5206\u53f7\n\u5206\u5272\u7ec4\u6210\u7684\u5b57\u7b26\u4e32\u5230\u63a5\u53e3, \u5982\u679c\u8981\u6dfb\u52a0\u4e00\u9879, \u5219\u5c06\u65b0\u7684\u4e00\u9879\u4e0e\u539f\u6709\u96c6\u5408\n\u7531\u5206\u53f7\u5206\u5272\u7ec4\u6210\u65b0\u7684\u5b57\u7b26\u4e32\u63d0\u4ea4\u5230\u63a5\u53e3", 
+            "title": "\u6dfb\u52a0\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355\uff0f\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355"
+        }, 
+        {
+            "location": "/security/add_blacklist/#_1", 
+            "text": "", 
+            "title": "\u6dfb\u52a0\u8bbf\u5ba2\u9ed1\u767d\u540d\u5355/\u9632\u76d7\u94fe\u9ed1\u767d\u540d\u5355"
+        }, 
+        {
+            "location": "/security/add_blacklist/#_2", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/blackwhite", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/security/add_blacklist/#_3", 
+            "text": "blackips:string     \u8bbf\u5ba2\u9ed1\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\nwhiteips:string     \u8bbf\u5ba2\u767d\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\nreferer:string      \u9632\u76d7\u94fe\u9ed1\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a\n\nwhite_referers: string  \u9632\u76d7\u94fe\u767d\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/security/add_blacklist/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/security/add_blacklist/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    blackips  \u8bbf\u5ba2\u9ed1\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    whiteips  \u8bbf\u5ba2\u767d\u540d\u5355IP\u5217\u8868, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    referer  \u9632\u76d7\u94fe\u9ed1\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    white_referers  \u9632\u76d7\u94fe\u767d\u540d\u5355, IP\u6216\u8005\u57df\u540d\u683c\u5f0f, \u7531\u5206\u53f7\u5206\u5272\u591a\u4e2a    channel_id  \u8bb0\u5f55\u6240\u5c5e\u9891\u9053     \u63d0\u793a\n\u8be5\u63a5\u53e3\u7528\u6765\u8bbe\u7f6e\u9ed1\u767d\u540d\u5355\u5ba2\u6237\u5217\u8868, \u4ee5\u53ca\u9632\u76d7\u94fe\u7684\u9ed1\u767d\u540d\u5355\u5217\u8868\n\u6bcf\u4e00\u9879\u5747\u53ef\u4ee5\u5355\u72ec\u8bbe\u7f6e, \u5373\u4ec5\u9700\u8981\u63d0\u4ea4\u8981\u66f4\u6539\u7684\u4fe1\u606f\u6240\u5c5e\u5b57\u6bb5\u5373\u53ef\n\u6ce8\u610f\n\u8be5\u63a5\u53e3\u96c6\u6dfb\u52a0\u4e0e\u5220\u9664\u4e8e\u4e00\u4f53, \u5373\u5982\u679c\u8981\u5220\u9664\u4e00\u9879, \u5219\u63d0\u4ea4\u4f59\u4e0b\u9879\u7531\u5206\u53f7\n\u5206\u5272\u7ec4\u6210\u7684\u5b57\u7b26\u4e32\u5230\u63a5\u53e3, \u5982\u679c\u8981\u6dfb\u52a0\u4e00\u9879, \u5219\u5c06\u65b0\u7684\u4e00\u9879\u4e0e\u539f\u6709\u96c6\u5408\n\u7531\u5206\u53f7\u5206\u5272\u7ec4\u6210\u65b0\u7684\u5b57\u7b26\u4e32\u63d0\u4ea4\u5230\u63a5\u53e3", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/cache_raw/query_cache_raw/", 
+            "text": "\u67e5\u8be2\u7f13\u5b58\u89c4\u5219\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/cache-rules\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\norig_path\n\n\n\u7f13\u5b58\u89c4\u5219\n\n\n\n\n\n\nmax_age\n\n\n\u7f13\u5b58\u65f6\u95f4, \u6b63\u6574\u6570\u7684\u79d2\u6570\u6216\u8005\u5b57\u7b26\u4e32\u5e38\u91cf 'no-cache'\n\n\n\n\n\n\norder_num\n\n\n\u8be5\u7f13\u5b58\u89c4\u5219\u7684\u4f18\u5148\u7ea7, \u6570\u5b57\u8d8a\u5c0f\u8d8a\u4f18\u5148\u5339\u914d\n\n\n\n\n\n\ndomain_id\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u7f13\u5b58\u89c4\u5219\u521b\u5efa\u65f6\u95f4\n\n\n\n\n\n\n\n\n\u7f13\u5b58\u89c4\u5219\u5747\u662f\u7ed1\u5b9a\u5230\u57df\u540d\u7684, \u56e0\u6b64\u5982\u679c\u8981\u8bbe\u7f6e\u4e00\u4e2a\u7f13\u5b58\u89c4\u5219, \u9700\u8981\n\u5148\u83b7\u53d6\u5f85\u6dfb\u52a0\u57df\u540d\u7684ID, \u5173\u4e8e\u5982\u4f55\u83b7\u53d6DOMAIN_ID, \u8bf7\u53c2\u8003\n\u67e5\u8be2\u4e00\u4e2a\u9891\u9053", 
+            "title": "\u67e5\u8be2\u7f13\u5b58\u89c4\u5219"
+        }, 
+        {
+            "location": "/cache_raw/query_cache_raw/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u7f13\u5b58\u89c4\u5219"
+        }, 
+        {
+            "location": "/cache_raw/query_cache_raw/#_2", 
+            "text": "GET  http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/cache-rules", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/cache_raw/query_cache_raw/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/cache_raw/query_cache_raw/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/cache_raw/query_cache_raw/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    orig_path  \u7f13\u5b58\u89c4\u5219    max_age  \u7f13\u5b58\u65f6\u95f4, \u6b63\u6574\u6570\u7684\u79d2\u6570\u6216\u8005\u5b57\u7b26\u4e32\u5e38\u91cf 'no-cache'    order_num  \u8be5\u7f13\u5b58\u89c4\u5219\u7684\u4f18\u5148\u7ea7, \u6570\u5b57\u8d8a\u5c0f\u8d8a\u4f18\u5148\u5339\u914d    domain_id  \u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u7f13\u5b58\u89c4\u5219\u521b\u5efa\u65f6\u95f4     \u7f13\u5b58\u89c4\u5219\u5747\u662f\u7ed1\u5b9a\u5230\u57df\u540d\u7684, \u56e0\u6b64\u5982\u679c\u8981\u8bbe\u7f6e\u4e00\u4e2a\u7f13\u5b58\u89c4\u5219, \u9700\u8981\n\u5148\u83b7\u53d6\u5f85\u6dfb\u52a0\u57df\u540d\u7684ID, \u5173\u4e8e\u5982\u4f55\u83b7\u53d6DOMAIN_ID, \u8bf7\u53c2\u8003 \u67e5\u8be2\u4e00\u4e2a\u9891\u9053", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/cache_raw/add_cache_raw/", 
+            "text": "\u6dfb\u52a0\u7f13\u5b58\u89c4\u5219\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/cache-rules\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\norig_path(required):string      \u7f13\u5b58\u89c4\u5219\n\nmax_age(required):string        \u7f13\u5b58\u65f6\u95f4, \u6b63\u6574\u6570\u6216\u8005\u5b57\u7b26\u4e32\u5e38\u91cf'no-cache'\n\norder_num(required):integer     \u89c4\u5219\u4f18\u5148\u7ea7, \u8d8a\u5c0f\u4f18\u5148\u5339\u914d, \u9ed8\u8ba4\u6392\u6700\u540e\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\u8bf7\u53c2\u8003 \u67e5\u8be2\u7f13\u5b58\u89c4\u5219\n\u63d0\u4ea4\u53c2\u6570\u4e2d\u7684 order_num \u5efa\u8bae\u4f7f\u7528\u5df2\u6709\u89c4\u5219\u4e2d\u7684max(order_num)+1\u6765\u63d0\u4ea4.\n\u5982\u679c\u9700\u8981\u4fee\u6539, \u8bf7\u4f7f\u7528 \u4fee\u6539\u7f13\u5b58\u89c4\u5219\n\u7f13\u5b58\u89c4\u5219\u4ecb\u7ecd\nTAN14 CDN\u7f13\u5b58\u89c4\u5219\u5236\u5b9a\u529f\u80fd\u652f\u6301\u901a\u914d\u7b26\u8bb0\u5f55, \u4e0b\u8fb9\u6211\u4eec\u4ee5\u4e00\u4e9b\u5e38\u89c1\u4f8b\u5b50\u6765\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\u89c4\u5219\n\n\nmax_age\n\n\norder_num\n\n\n\u542b\u4e49\n\n\n\n\n\n\n\n\n\n\n/$\n\n\n600\n\n\n0\n\n\n\u9996\u9875\u7f13\u5b5810\u5206\u949f\n\n\n\n\n\n\n/sub/*.jpg$\n\n\n3600\n\n\n1\n\n\n/sub\u76ee\u5f55\u4e0b\u7684jpg\u8d44\u6e90\u7f13\u5b581\u5c0f\u65f6\n\n\n\n\n\n\n/*.jpg$\n\n\n7200\n\n\n2\n\n\n\u9664\u53bb /sub \u76ee\u5f55\u4e0b jpg\u8d44\u6e90\u4e4b\u5916\u7684\u6574\u7ad9jpg\u8d44\u6e90\u7f13\u5b582\u5c0f\u65f6\n\n\n\n\n\n\n/*\n\n\nno-cache\n\n\n3\n\n\n\u9664\u53bb\u9996\u9875\u4e0e\u5168\u7ad9jpg\u8d44\u6e90\u4e4b\u5916\u7684\u8d44\u6e90\u4e0d\u7f13\u5b58", 
+            "title": "\u6dfb\u52a0\u7f13\u5b58\u89c4\u5219"
+        }, 
+        {
+            "location": "/cache_raw/add_cache_raw/#_1", 
+            "text": "", 
+            "title": "\u6dfb\u52a0\u7f13\u5b58\u89c4\u5219"
+        }, 
+        {
+            "location": "/cache_raw/add_cache_raw/#_2", 
+            "text": "POST     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/cache-rules", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/cache_raw/add_cache_raw/#_3", 
+            "text": "orig_path(required):string      \u7f13\u5b58\u89c4\u5219\n\nmax_age(required):string        \u7f13\u5b58\u65f6\u95f4, \u6b63\u6574\u6570\u6216\u8005\u5b57\u7b26\u4e32\u5e38\u91cf'no-cache'\n\norder_num(required):integer     \u89c4\u5219\u4f18\u5148\u7ea7, \u8d8a\u5c0f\u4f18\u5148\u5339\u914d, \u9ed8\u8ba4\u6392\u6700\u540e", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/cache_raw/add_cache_raw/#_4", 
+            "text": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\u8bf7\u53c2\u8003 \u67e5\u8be2\u7f13\u5b58\u89c4\u5219\n\u63d0\u4ea4\u53c2\u6570\u4e2d\u7684 order_num \u5efa\u8bae\u4f7f\u7528\u5df2\u6709\u89c4\u5219\u4e2d\u7684max(order_num)+1\u6765\u63d0\u4ea4.\n\u5982\u679c\u9700\u8981\u4fee\u6539, \u8bf7\u4f7f\u7528 \u4fee\u6539\u7f13\u5b58\u89c4\u5219\n\u7f13\u5b58\u89c4\u5219\u4ecb\u7ecd\nTAN14 CDN\u7f13\u5b58\u89c4\u5219\u5236\u5b9a\u529f\u80fd\u652f\u6301\u901a\u914d\u7b26\u8bb0\u5f55, \u4e0b\u8fb9\u6211\u4eec\u4ee5\u4e00\u4e9b\u5e38\u89c1\u4f8b\u5b50\u6765\u8bf4\u660e     \u89c4\u5219  max_age  order_num  \u542b\u4e49      /$  600  0  \u9996\u9875\u7f13\u5b5810\u5206\u949f    /sub/*.jpg$  3600  1  /sub\u76ee\u5f55\u4e0b\u7684jpg\u8d44\u6e90\u7f13\u5b581\u5c0f\u65f6    /*.jpg$  7200  2  \u9664\u53bb /sub \u76ee\u5f55\u4e0b jpg\u8d44\u6e90\u4e4b\u5916\u7684\u6574\u7ad9jpg\u8d44\u6e90\u7f13\u5b582\u5c0f\u65f6    /*  no-cache  3  \u9664\u53bb\u9996\u9875\u4e0e\u5168\u7ad9jpg\u8d44\u6e90\u4e4b\u5916\u7684\u8d44\u6e90\u4e0d\u7f13\u5b58", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/cache_raw/change_cache_raw/", 
+            "text": "\u4fee\u6539/\u5220\u9664\u7f13\u5b58\u89c4\u5219\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPUT\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/cache-rules\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\ncache_rules(required):object    \u4fee\u6539\u540e\u7684\u7f13\u5b58\u89c4\u5219\u5bf9\u8c61\u5217\u8868\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\norig_path\n\n\n\u7f13\u5b58\u89c4\u5219\n\n\n\n\n\n\nmax_age\n\n\n\u7f13\u5b58\u65f6\u95f4, \u6b63\u6574\u6570\u7684\u79d2\u6570\u6216\u8005\u5b57\u7b26\u4e32\u5e38\u91cf 'no-cache'\n\n\n\n\n\n\norder_num\n\n\n\u8be5\u7f13\u5b58\u89c4\u5219\u7684\u4f18\u5148\u7ea7, \u6570\u5b57\u8d8a\u5c0f\u8d8a\u4f18\u5148\u5339\u914d\n\n\n\n\n\n\ndomain_id\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u7f13\u5b58\u89c4\u5219\u521b\u5efa\u65f6\u95f4\n\n\n\n\n\n\n\n\n\u8bf4\u660e\n\u8be5\u63a5\u53e3\u7528\u4e8e\u5220\u9664\u548c\u8c03\u6574\u7f13\u5b58\u89c4\u5219\u7684\u4f18\u5148\u7ea7\u987a\u5e8f\n\u5982\u679c\u60a8\u8981\u5220\u9664\u67d0\u4e2a\u7f13\u5b58\u89c4\u5219, \u4ec5\u9700\u8981\u5c06\u8be5\u7f13\u5b58\u89c4\u5219\n\u5bf9\u8c61\u4ece\u7f13\u5b58\u89c4\u5219\u5217\u8868\u4e2d\u5220\u9664\u540e, \u63d0\u4ea4\u5269\u4f59\u7f13\u5b58\u89c4\u5219\n\u5217\u8868\u5230\u63a5\u53e3\u5373\u53ef. \u5982\u679c\u8981\u4fee\u6539\u4f18\u5148\u7ea7, \u5219\u5c06order_num\n\u4fee\u6539\u4e3a\u60a8\u9700\u8981\u7684\u987a\u5e8f\u4e4b\u540e\u63d0\u4ea4\u7ed9\u63a5\u53e3\u5373\u53ef", 
+            "title": "\u4fee\u6539\uff0f\u5220\u9664\u7f13\u5b58\u89c4\u5219"
+        }, 
+        {
+            "location": "/cache_raw/change_cache_raw/#_1", 
+            "text": "", 
+            "title": "\u4fee\u6539/\u5220\u9664\u7f13\u5b58\u89c4\u5219"
+        }, 
+        {
+            "location": "/cache_raw/change_cache_raw/#_2", 
+            "text": "PUT     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/cache-rules", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/cache_raw/change_cache_raw/#_3", 
+            "text": "cache_rules(required):object    \u4fee\u6539\u540e\u7684\u7f13\u5b58\u89c4\u5219\u5bf9\u8c61\u5217\u8868", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/cache_raw/change_cache_raw/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/cache_raw/change_cache_raw/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    orig_path  \u7f13\u5b58\u89c4\u5219    max_age  \u7f13\u5b58\u65f6\u95f4, \u6b63\u6574\u6570\u7684\u79d2\u6570\u6216\u8005\u5b57\u7b26\u4e32\u5e38\u91cf 'no-cache'    order_num  \u8be5\u7f13\u5b58\u89c4\u5219\u7684\u4f18\u5148\u7ea7, \u6570\u5b57\u8d8a\u5c0f\u8d8a\u4f18\u5148\u5339\u914d    domain_id  \u57df\u540d\u8bb0\u5f55ID,\u00a0URL\u5360\u4f4d\u7b26\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u7f13\u5b58\u89c4\u5219\u521b\u5efa\u65f6\u95f4     \u8bf4\u660e\n\u8be5\u63a5\u53e3\u7528\u4e8e\u5220\u9664\u548c\u8c03\u6574\u7f13\u5b58\u89c4\u5219\u7684\u4f18\u5148\u7ea7\u987a\u5e8f\n\u5982\u679c\u60a8\u8981\u5220\u9664\u67d0\u4e2a\u7f13\u5b58\u89c4\u5219, \u4ec5\u9700\u8981\u5c06\u8be5\u7f13\u5b58\u89c4\u5219\n\u5bf9\u8c61\u4ece\u7f13\u5b58\u89c4\u5219\u5217\u8868\u4e2d\u5220\u9664\u540e, \u63d0\u4ea4\u5269\u4f59\u7f13\u5b58\u89c4\u5219\n\u5217\u8868\u5230\u63a5\u53e3\u5373\u53ef. \u5982\u679c\u8981\u4fee\u6539\u4f18\u5148\u7ea7, \u5219\u5c06order_num\n\u4fee\u6539\u4e3a\u60a8\u9700\u8981\u7684\u987a\u5e8f\u4e4b\u540e\u63d0\u4ea4\u7ed9\u63a5\u53e3\u5373\u53ef", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/query_refresh_task_list/", 
+            "text": "\u67e5\u8be2\u5237\u65b0\u4efb\u52a1\u5217\u8868\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/refresh\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nurl\n\n\n\u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \\\n\n\n\n\n\n\nis_preload\n\n\n\u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 0\n\n\n\n\n\n\nweight\n\n\n\u4efb\u52a1\u4f18\u5148\u7ea7\n\n\n\n\n\n\nprogress\n\n\n\u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f\n\n\n\n\n\n\nnodes\n\n\nN/M , \u5f53progress=2 \u4e14 N\n=M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N\nM, \u5219\u4efb\u52a1\u5931\u8d25\n\n\n\n\n\n\ncreated\n\n\n\u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u5237\u65b0\u4efb\u52a1\u5217\u8868"
+        }, 
+        {
+            "location": "/content_mgr/query_refresh_task_list/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u5237\u65b0\u4efb\u52a1\u5217\u8868"
+        }, 
+        {
+            "location": "/content_mgr/query_refresh_task_list/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/refresh", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/query_refresh_task_list/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/query_refresh_task_list/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/query_refresh_task_list/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    url  \u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \\    is_preload  \u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 0    weight  \u4efb\u52a1\u4f18\u5148\u7ea7    progress  \u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f    nodes  N/M , \u5f53progress=2 \u4e14 N =M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N M, \u5219\u4efb\u52a1\u5931\u8d25    created  \u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/query_single_task/", 
+            "text": "\u67e5\u8be2\u5355\u4e2a\u5237\u65b0\u4efb\u52a1\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/YOUR_APP_REFRESH_ID/refresh\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nurl\n\n\n\u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \\\n\n\n\n\n\n\nis_preload\n\n\n\u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 0\n\n\n\n\n\n\nweight\n\n\n\u4efb\u52a1\u4f18\u5148\u7ea7\n\n\n\n\n\n\nprogress\n\n\n\u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f\n\n\n\n\n\n\nnodes\n\n\nN/M , \u5f53progress=2 \u4e14 N\n=M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N\nM, \u5219\u4efb\u52a1\u5931\u8d25\n\n\n\n\n\n\ncreated\n\n\n\u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u5355\u4e2a\u5237\u65b0\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/query_single_task/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u5355\u4e2a\u5237\u65b0\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/query_single_task/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/YOUR_APP_REFRESH_ID/refresh", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/query_single_task/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/query_single_task/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/query_single_task/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    url  \u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \\    is_preload  \u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 0    weight  \u4efb\u52a1\u4f18\u5148\u7ea7    progress  \u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f    nodes  N/M , \u5f53progress=2 \u4e14 N =M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N M, \u5219\u4efb\u52a1\u5931\u8d25    created  \u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/add_task/", 
+            "text": "\u6dfb\u52a0\u5237\u65b0\u4efb\u52a1\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/refresh\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nurl(required):string    \u8981\u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \u7528 | \u5206\u5272, \u6700\u591a\u4e0d\u8d85\u8fc71000\u6761\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nurl\n\n\n\u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \\\n\n\n\n\n\n\nis_preload\n\n\n\u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 0\n\n\n\n\n\n\nweight\n\n\n\u4efb\u52a1\u4f18\u5148\u7ea7\n\n\n\n\n\n\nprogress\n\n\n\u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f\n\n\n\n\n\n\nnodes\n\n\nN/M , \u5f53progress=2 \u4e14 N\n=M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N\nM, \u5219\u4efb\u52a1\u5931\u8d25\n\n\n\n\n\n\ncreated\n\n\n\u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u6dfb\u52a0\u5237\u65b0\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/add_task/#_1", 
+            "text": "", 
+            "title": "\u6dfb\u52a0\u5237\u65b0\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/add_task/#_2", 
+            "text": "POST     http://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/refresh", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/add_task/#_3", 
+            "text": "url(required):string    \u8981\u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \u7528 | \u5206\u5272, \u6700\u591a\u4e0d\u8d85\u8fc71000\u6761", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/add_task/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/add_task/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    url  \u5237\u65b0\u7684\u8d44\u6e90\u5217\u8868, \\    is_preload  \u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 0    weight  \u4efb\u52a1\u4f18\u5148\u7ea7    progress  \u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f    nodes  N/M , \u5f53progress=2 \u4e14 N =M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N M, \u5219\u4efb\u52a1\u5931\u8d25    created  \u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/query_preload_tasklist/", 
+            "text": "\u67e5\u8be2\u9884\u52a0\u8f7d\u4efb\u52a1\u5217\u8868\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/preload\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nurl\n\n\n\u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \\\n\n\n\n\n\n\nis_preload\n\n\n\u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 1\n\n\n\n\n\n\nweight\n\n\n\u4efb\u52a1\u4f18\u5148\u7ea7\n\n\n\n\n\n\nprogress\n\n\n\u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f\n\n\n\n\n\n\nnodes\n\n\nN/M , \u5f53progress=2 \u4e14 N\n=M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N\nM, \u5219\u4efb\u52a1\u5931\u8d25\n\n\n\n\n\n\ncreated\n\n\n\u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u9884\u52a0\u8f7d\u4efb\u52a1\u5217\u8868"
+        }, 
+        {
+            "location": "/content_mgr/query_preload_tasklist/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u9884\u52a0\u8f7d\u4efb\u52a1\u5217\u8868"
+        }, 
+        {
+            "location": "/content_mgr/query_preload_tasklist/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/preload", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/query_preload_tasklist/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/query_preload_tasklist/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/query_preload_tasklist/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    url  \u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \\    is_preload  \u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 1    weight  \u4efb\u52a1\u4f18\u5148\u7ea7    progress  \u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f    nodes  N/M , \u5f53progress=2 \u4e14 N =M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N M, \u5219\u4efb\u52a1\u5931\u8d25    created  \u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/query_single_preload_task/", 
+            "text": "\u67e5\u8be2\u5355\u4e2a\u9884\u52a0\u8f7d\u4efb\u52a1\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/YOUR_APP_PRELOAD_ID/preload\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nurl\n\n\n\u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \\\n\n\n\n\n\n\nis_preload\n\n\n\u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 1\n\n\n\n\n\n\nweight\n\n\n\u4efb\u52a1\u4f18\u5148\u7ea7\n\n\n\n\n\n\nprogress\n\n\n\u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f\n\n\n\n\n\n\nnodes\n\n\nN/M , \u5f53progress=2 \u4e14 N\n=M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N\nM, \u5219\u4efb\u52a1\u5931\u8d25\n\n\n\n\n\n\ncreated\n\n\n\u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u67e5\u8be2\u5355\u4e2a\u9884\u52a0\u8f7d\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/query_single_preload_task/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u5355\u4e2a\u9884\u52a0\u8f7d\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/query_single_preload_task/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/YOUR_APP_PRELOAD_ID/preload", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/query_single_preload_task/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/query_single_preload_task/#_4", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/query_single_preload_task/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    url  \u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \\    is_preload  \u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 1    weight  \u4efb\u52a1\u4f18\u5148\u7ea7    progress  \u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f    nodes  N/M , \u5f53progress=2 \u4e14 N =M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N M, \u5219\u4efb\u52a1\u5931\u8d25    created  \u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/add_preload_task/", 
+            "text": "post\u6dfb\u52a0\u9884\u52a0\u8f7d\u4efb\u52a1\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/preload\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\nurl(required):string        \u8981\u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \u7528 | \u5206\u5272, \u6700\u591a\u4e0d\u8d85\u8fc71000\u6761\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\nurl\n\n\n\u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \\\n\n\n\n\n\n\nis_preload\n\n\n\u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 1\n\n\n\n\n\n\nweight\n\n\n\u4efb\u52a1\u4f18\u5148\u7ea7\n\n\n\n\n\n\nprogress\n\n\n\u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f\n\n\n\n\n\n\nnodes\n\n\nN/M , \u5f53progress=2 \u4e14 N\n=M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N\nM, \u5219\u4efb\u52a1\u5931\u8d25\n\n\n\n\n\n\ncreated\n\n\n\u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u6dfb\u52a0\u9884\u52a0\u8f7d\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/add_preload_task/#post", 
+            "text": "", 
+            "title": "post\u6dfb\u52a0\u9884\u52a0\u8f7d\u4efb\u52a1"
+        }, 
+        {
+            "location": "/content_mgr/add_preload_task/#_1", 
+            "text": "POST     http://dev.api.tan14.cn/wp/YOUR_APP_PN/channel/preload", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/add_preload_task/#_2", 
+            "text": "url(required):string        \u8981\u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \u7528 | \u5206\u5272, \u6700\u591a\u4e0d\u8d85\u8fc71000\u6761", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/add_preload_task/#_3", 
+            "text": "", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/add_preload_task/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    url  \u9884\u52a0\u8f7d\u7684\u8d44\u6e90\u5217\u8868, \\    is_preload  \u5e38\u91cf\u503c, \u56fa\u5b9a\u4e3a 1    weight  \u4efb\u52a1\u4f18\u5148\u7ea7    progress  \u8fdb\u5ea6, \u4e3a2\u65f6\u4ee3\u8868\u4efb\u52a1\u7ed3\u675f    nodes  N/M , \u5f53progress=2 \u4e14 N =M\u65f6\u4efb\u52a1\u6210\u529f, progress=2 \u4e14 N M, \u5219\u4efb\u52a1\u5931\u8d25    created  \u4efb\u52a1\u521b\u5efa\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/query_catalog_refresh_log/", 
+            "text": "\u67e5\u8be2\u76ee\u5f55\u5237\u65b0\u8bb0\u5f55\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/DOMAIN_ID/dir-refresh\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\norig_reg\n\n\n\u76ee\u5f55\u5237\u65b0\u89c4\u5219\n\n\n\n\n\n\ndomain_id\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0\nURL\u5360\u4f4d\u7b26\n\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u6761\u8bb0\u5f55\u6dfb\u52a0\u7684\u65f6\u95f4\n\n\n\n\n\n\n\n\n\u6ce8\u610f\n\n\n\u76ee\u5f55\u5237\u65b0\u5747\u662f\u7ed1\u5b9a\u5230\u57df\u540d\u7684, \u56e0\u6b64\u5982\u679c\u8981\u6dfb\u52a0\u4e00\u6761\u76ee\u5f55\u5237\u65b0, \u9700\u8981\n\u5148\u83b7\u53d6\u5f85\u6dfb\u52a0\u57df\u540d\u7684ID, \u5173\u4e8e\u5982\u4f55\u83b7\u53d6DOMAIN_ID, \u8bf7\u53c2\u8003\u00a0\n\u67e5\u8be2\u4e00\u4e2a\u9891\u9053", 
+            "title": "\u67e5\u8be2\u76ee\u5f55\u5237\u65b0\u8bb0\u5f55"
+        }, 
+        {
+            "location": "/content_mgr/query_catalog_refresh_log/#_1", 
+            "text": "", 
+            "title": "\u67e5\u8be2\u76ee\u5f55\u5237\u65b0\u8bb0\u5f55"
+        }, 
+        {
+            "location": "/content_mgr/query_catalog_refresh_log/#_2", 
+            "text": "GET    http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/DOMAIN_ID/dir-refresh", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/query_catalog_refresh_log/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/query_catalog_refresh_log/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    orig_reg  \u76ee\u5f55\u5237\u65b0\u89c4\u5219    domain_id  \u57df\u540d\u8bb0\u5f55ID,\u00a0 URL\u5360\u4f4d\u7b26 \u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u6761\u8bb0\u5f55\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/query_catalog_refresh_log/#_5", 
+            "text": "\u76ee\u5f55\u5237\u65b0\u5747\u662f\u7ed1\u5b9a\u5230\u57df\u540d\u7684, \u56e0\u6b64\u5982\u679c\u8981\u6dfb\u52a0\u4e00\u6761\u76ee\u5f55\u5237\u65b0, \u9700\u8981\n\u5148\u83b7\u53d6\u5f85\u6dfb\u52a0\u57df\u540d\u7684ID, \u5173\u4e8e\u5982\u4f55\u83b7\u53d6DOMAIN_ID, \u8bf7\u53c2\u8003\u00a0 \u67e5\u8be2\u4e00\u4e2a\u9891\u9053", 
+            "title": "\u6ce8\u610f"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/", 
+            "text": "\u6dfb\u52a0\u76ee\u5f55\u5237\u65b0\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/dir-refresh\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\norig_reg\uff08required)string        \u8981\u6dfb\u52a0\u7684\u76ee\u5f55\u5237\u65b0\u89c4\u5219, \u8be6\u7ec6\u4ecb\u7ecd\u89c1\u4e0b\u65b9\n\n\n\n\u54cd\u5e94\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\u8bf7\u53c2\u8003\u00a0[\u67e5\u8be2\u76ee\u5f55\u5237\u65b0\u8bb0\u5f55]\n\n\n\n\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nid\n\n\n\u6570\u636e\u5e93\u8bb0\u5f55ID\n\n\n\n\n\n\norig_reg\n\n\n\u76ee\u5f55\u5237\u65b0\u89c4\u5219\n\n\n\n\n\n\ndomain_id\n\n\n\u57df\u540d\u8bb0\u5f55ID,\u00a0\nURL\u5360\u4f4d\u7b26\n\u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c\n\n\n\n\n\n\ncreated\n\n\n\u8be5\u6761\u8bb0\u5f55\u6dfb\u52a0\u7684\u65f6\u95f4\n\n\n\n\n\n\n\n\n\u76ee\u5f55\u5237\u65b0\u89c4\u5219\u4ecb\u7ecd\n\n\nTAN14 CDN\u76ee\u5f55\u5237\u65b0\u529f\u80fd\u652f\u6301\u901a\u914d\u7b26\u8bb0\u5f55, \u4e0b\u8fb9\u6211\u4eec\u4ee5\u4e00\u4e9b\u5e38\u89c1\u4f8b\u5b50\u6765\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u89c4\u5219\n\n\n\u542b\u4e49\n\n\n\n\n\n\n\n\n\n\n/*\n\n\n\u6574\u7ad9\u5237\u65b0,\u00a0\n\u5927\u5e45\u589e\u52a0\u6e90\u7ad9\u6d88\u8017\n, \u614e\u7528\n\n\n\n\n\n\n/sub/*\n\n\n\u5237\u65b0 /sub \u76ee\u5f55\u4e0b\u7684\u5168\u90e8\u8d44\u6e90\n\n\n\n\n\n\n/sub/*.jpg$\n\n\n\u5237\u65b0 /sub \u76ee\u5f55\u4e0b\u7684\u5168\u90e8 jpg \u6587\u4ef6\n\n\n\n\n\n\n/$\n\n\n\u5237\u65b0\u9996\u9875\n\n\n\n\n\n\n/su\n/\n.gif$\n\n\n\u5237\u65b0 /su \u5f00\u5934\u7684\u76ee\u5f55, \u6bd4\u5982 /sua , /sub \u7b49\u7b49 \u76ee\u5f55\u4e0b\u7684gif \u8d44\u6e90", 
+            "title": "\u6dfb\u52a0\u76ee\u5f55\u5237\u65b0"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/#_1", 
+            "text": "", 
+            "title": "\u6dfb\u52a0\u76ee\u5f55\u5237\u65b0"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/#_2", 
+            "text": "POST     http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/domain/YOUR_APP_DOMAIN_ID/dir-refresh", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/#_3", 
+            "text": "orig_reg\uff08required)string        \u8981\u6dfb\u52a0\u7684\u76ee\u5f55\u5237\u65b0\u89c4\u5219, \u8be6\u7ec6\u4ecb\u7ecd\u89c1\u4e0b\u65b9", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/#_4", 
+            "text": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e\u8bf7\u53c2\u8003\u00a0[\u67e5\u8be2\u76ee\u5f55\u5237\u65b0\u8bb0\u5f55]", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/#_5", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      id  \u6570\u636e\u5e93\u8bb0\u5f55ID    orig_reg  \u76ee\u5f55\u5237\u65b0\u89c4\u5219    domain_id  \u57df\u540d\u8bb0\u5f55ID,\u00a0 URL\u5360\u4f4d\u7b26 \u4e2d\u7684 DOMAIN_ID \u7684\u771f\u5b9e\u503c    created  \u8be5\u6761\u8bb0\u5f55\u6dfb\u52a0\u7684\u65f6\u95f4", 
+            "title": "\u8fd4\u56de\u5b57\u6bb5\u8bf4\u660e"
+        }, 
+        {
+            "location": "/content_mgr/add_catalog_refresh/#_6", 
+            "text": "TAN14 CDN\u76ee\u5f55\u5237\u65b0\u529f\u80fd\u652f\u6301\u901a\u914d\u7b26\u8bb0\u5f55, \u4e0b\u8fb9\u6211\u4eec\u4ee5\u4e00\u4e9b\u5e38\u89c1\u4f8b\u5b50\u6765\u8bf4\u660e     \u89c4\u5219  \u542b\u4e49      /*  \u6574\u7ad9\u5237\u65b0,\u00a0 \u5927\u5e45\u589e\u52a0\u6e90\u7ad9\u6d88\u8017 , \u614e\u7528    /sub/*  \u5237\u65b0 /sub \u76ee\u5f55\u4e0b\u7684\u5168\u90e8\u8d44\u6e90    /sub/*.jpg$  \u5237\u65b0 /sub \u76ee\u5f55\u4e0b\u7684\u5168\u90e8 jpg \u6587\u4ef6    /$  \u5237\u65b0\u9996\u9875    /su / .gif$  \u5237\u65b0 /su \u5f00\u5934\u7684\u76ee\u5f55, \u6bd4\u5982 /sua , /sub \u7b49\u7b49 \u76ee\u5f55\u4e0b\u7684gif \u8d44\u6e90", 
+            "title": "\u76ee\u5f55\u5237\u65b0\u89c4\u5219\u4ecb\u7ecd"
+        }, 
+        {
+            "location": "/cache_check/submit_task/", 
+            "text": "\u63d0\u4ea4\u6821\u9a8c\u4efb\u52a1\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nPOST\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/md5\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\npn: string      \u60a8\u7684\u4ea7\u54c1ID\nurl:string      \u5f85\u6821\u9a8c\u7684\u8d44\u6e90\u5730\u5740\n\n\n\n\u54cd\u5e94\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\ntask_id\n\n\n\u4efb\u52a1\u6821\u9a8cID, \u5728\u9700\u8981\u7528\u5230,\u00a0\u4e2d\u7684 MD5_TASK_ID \u7684\u771f\u5b9e\u503c", 
+            "title": "\u63d0\u4ea4\u6821\u9a8c\u4efb\u52a1"
+        }, 
+        {
+            "location": "/cache_check/submit_task/#_1", 
+            "text": "", 
+            "title": "\u63d0\u4ea4\u6821\u9a8c\u4efb\u52a1"
+        }, 
+        {
+            "location": "/cache_check/submit_task/#_2", 
+            "text": "POST     http://dev.api.tan14.cn/wp/v2/md5", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/cache_check/submit_task/#_3", 
+            "text": "pn: string      \u60a8\u7684\u4ea7\u54c1ID\nurl:string      \u5f85\u6821\u9a8c\u7684\u8d44\u6e90\u5730\u5740", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/cache_check/submit_task/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      task_id  \u4efb\u52a1\u6821\u9a8cID, \u5728\u9700\u8981\u7528\u5230,\u00a0\u4e2d\u7684 MD5_TASK_ID \u7684\u771f\u5b9e\u503c", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/cache_check/check_result/", 
+            "text": "\u67e5\u770b\u6821\u9a8c\u7ed3\u679c\n\n\n\u8bf7\u6c42\u5730\u5740\n\n\nGET\n  \n\n\nhttp://dev.api.tan14.cn/wp/v2/md5/YOUR_APP_MD5_TASK_ID\n\n\n\n\u643a\u5e26\u53c2\u6570\n\n\n\u65e0\n\n\n\u54cd\u5e94\n\n\n\n\n\n\n\n\n\u5b57\u6bb5\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\nbackend\n\n\n\u6e90\u7ad9\u68c0\u6d4b\u7ed3\u679c, \u7ed3\u6784\u53c2\u8003\u00a0backend \u7ed3\u6784\u8bf4\u660e\n\n\n\n\n\n\ncdn_nodes\n\n\n\u8282\u70b9\u68c0\u6d4b\u7ed3\u679c , \u5355\u4e2a\u5bf9\u8c61\u7ed3\u6784\u53c2\u8003\u00a0cdn_nodes\u7ed3\u6784\u8bf4\u660e\n\n\n\n\n\n\nstatus\n\n\n\u4efb\u52a1\u72b6\u6001, \u53c2\u8003\u00a0\n\u8fd9\u91cc\n\u00a0\u8be6\u7ec6\u63cf\u8ff0\n\n\n\n\n\n\n\n\nBACKEND\u7ed3\u6784\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5c5e\u6027\n\n\n\u542b\u4e49\n\n\n\n\n\n\n\n\n\n\nmd5_value\n\n\n\u8d44\u6e90MD5\u503c\n\n\n\n\n\n\ncontent_length\n\n\nhttp\u5934 Content-Length\n\n\n\n\n\n\navg_speed\n\n\n\u5e73\u5747\u4e0b\u8f7d\u901f\u5ea6(kb/s)\n\n\n\n\n\n\ntotal_time\n\n\n\u54cd\u5e94\u65f6\u95f4\n\n\n\n\n\n\nbackend\n\n\n\u6e90\u7ad9\u5730\u5740\n\n\n\n\n\n\nhttp_code\n\n\n\u72b6\u6001\u7801\n\n\n\n\n\n\n\n\nCDN_NODES\u7ed3\u6784\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u5c5e\u6027\n\n\n\u542b\u4e49\n\n\n\n\n\n\n\n\n\n\nip\n\n\n\u8282\u70b9IP\u5730\u5740\n\n\n\n\n\n\nip_info\n\n\n\u8282\u70b9IP\u5730\u5740\u4fe1\u606f\n\n\n\n\n\n\nmd5_value\n\n\n\u8d44\u6e90MD5\u503c\n\n\n\n\n\n\ncontent_length\n\n\nhttp\u5934 Content-Length\n\n\n\n\n\n\navg_speed\n\n\n\u5e73\u5747\u4e0b\u8f7d\u901f\u5ea6(kb/s)\n\n\n\n\n\n\ntotal_time\n\n\n\u54cd\u5e94\u65f6\u95f4\n\n\n\n\n\n\nhttp_code\n\n\n\u72b6\u6001\u7801\n\n\n\n\n\n\n\n\nSTATUS \u542b\u4e49\u8bf4\u660e\n\n\nstatus \u5171\u6709\u4e24\u79cd\u72b6\u6001: doing \u548c done\n\u5f53 status \u4e3a doing \u65f6, \u4efb\u52a1\u5904\u4e8e\u6267\u884c\u4e2d, \u63a5\u53e3\u8fd4\u56de\u7684\u6570\u636e\u4f1a\u968f\u7740\u4efb\u52a1\u7684\u8fdb\u884c\u800c\u66f4\u65b0,\n\u6b64\u65f6\u5ba2\u6237\u7aef\u7a0b\u5e8f\u5e94\u6bcf\u9694\u4e00\u5c0f\u6bb5\u65f6\u95f4\u4fbf\u6765\u68c0\u67e5\u4e00\u4e0b status \u72b6\u6001, \u76f4\u5230status\u53d8\u66f4\u4e3a\ndone, \u5ba2\u6237\u7aef\u505c\u6b62\u8bf7\u6c42, \u7136\u540e\u5c55\u73b0\u7ed3\u679c", 
+            "title": "\u67e5\u770b\u6821\u9a8c\u7ed3\u679c"
+        }, 
+        {
+            "location": "/cache_check/check_result/#_1", 
+            "text": "", 
+            "title": "\u67e5\u770b\u6821\u9a8c\u7ed3\u679c"
+        }, 
+        {
+            "location": "/cache_check/check_result/#_2", 
+            "text": "GET     http://dev.api.tan14.cn/wp/v2/md5/YOUR_APP_MD5_TASK_ID", 
+            "title": "\u8bf7\u6c42\u5730\u5740"
+        }, 
+        {
+            "location": "/cache_check/check_result/#_3", 
+            "text": "\u65e0", 
+            "title": "\u643a\u5e26\u53c2\u6570"
+        }, 
+        {
+            "location": "/cache_check/check_result/#_4", 
+            "text": "\u5b57\u6bb5  \u8bf4\u660e      backend  \u6e90\u7ad9\u68c0\u6d4b\u7ed3\u679c, \u7ed3\u6784\u53c2\u8003\u00a0backend \u7ed3\u6784\u8bf4\u660e    cdn_nodes  \u8282\u70b9\u68c0\u6d4b\u7ed3\u679c , \u5355\u4e2a\u5bf9\u8c61\u7ed3\u6784\u53c2\u8003\u00a0cdn_nodes\u7ed3\u6784\u8bf4\u660e    status  \u4efb\u52a1\u72b6\u6001, \u53c2\u8003\u00a0 \u8fd9\u91cc \u00a0\u8be6\u7ec6\u63cf\u8ff0", 
+            "title": "\u54cd\u5e94"
+        }, 
+        {
+            "location": "/cache_check/check_result/#backend", 
+            "text": "\u5c5e\u6027  \u542b\u4e49      md5_value  \u8d44\u6e90MD5\u503c    content_length  http\u5934 Content-Length    avg_speed  \u5e73\u5747\u4e0b\u8f7d\u901f\u5ea6(kb/s)    total_time  \u54cd\u5e94\u65f6\u95f4    backend  \u6e90\u7ad9\u5730\u5740    http_code  \u72b6\u6001\u7801", 
+            "title": "BACKEND\u7ed3\u6784\u8bf4\u660e"
+        }, 
+        {
+            "location": "/cache_check/check_result/#cdn_nodes", 
+            "text": "\u5c5e\u6027  \u542b\u4e49      ip  \u8282\u70b9IP\u5730\u5740    ip_info  \u8282\u70b9IP\u5730\u5740\u4fe1\u606f    md5_value  \u8d44\u6e90MD5\u503c    content_length  http\u5934 Content-Length    avg_speed  \u5e73\u5747\u4e0b\u8f7d\u901f\u5ea6(kb/s)    total_time  \u54cd\u5e94\u65f6\u95f4    http_code  \u72b6\u6001\u7801", 
+            "title": "CDN_NODES\u7ed3\u6784\u8bf4\u660e"
+        }, 
+        {
+            "location": "/cache_check/check_result/#status", 
+            "text": "status \u5171\u6709\u4e24\u79cd\u72b6\u6001: doing \u548c done\n\u5f53 status \u4e3a doing \u65f6, \u4efb\u52a1\u5904\u4e8e\u6267\u884c\u4e2d, \u63a5\u53e3\u8fd4\u56de\u7684\u6570\u636e\u4f1a\u968f\u7740\u4efb\u52a1\u7684\u8fdb\u884c\u800c\u66f4\u65b0,\n\u6b64\u65f6\u5ba2\u6237\u7aef\u7a0b\u5e8f\u5e94\u6bcf\u9694\u4e00\u5c0f\u6bb5\u65f6\u95f4\u4fbf\u6765\u68c0\u67e5\u4e00\u4e0b status \u72b6\u6001, \u76f4\u5230status\u53d8\u66f4\u4e3a\ndone, \u5ba2\u6237\u7aef\u505c\u6b62\u8bf7\u6c42, \u7136\u540e\u5c55\u73b0\u7ed3\u679c", 
+            "title": "STATUS \u542b\u4e49\u8bf4\u660e"
+        }, 
+        {
+            "location": "/cdn_data/get_CDN_data/", 
+            "text": "\u83b7\u53d6CDN\u6570\u636e(New)\n\n\nTAN14 CDN \u901a\u8fc7\u9759\u6001protobuf\u6570\u636e\u6587\u4ef6\u7f13\u51b2\u7684\u5f62\u5f0f\u4e3a\u5ba2\u6237\u63d0\u4f9b\u4e00\u4e2aCDN\u6570\u636e\u7684\u51c6\u5b9e\u65f6\u89c2\u5bdf\u6548\u679c\n\n\n\n\n\u4e3a\u4e86\u63d0\u4f9b\u4f53\u79ef\u66f4\u5c0f\uff0c\u89e3\u6790\u66f4\u5feb\uff0c\u6570\u636e\u6587\u4ef6\uff0c\u6211\u4eec\u4f7f\u7528\u4e86google\u7684\nprotobuf\u534f\u8bae\n\u6765\u6784\u5efa\u6570\u636e\u3002\n\n\n\u6570\u636e\u6587\u4ef6\u4f4d\u7f6e\n\n\n\n\n\u6d41\u91cf\n   proto\u6587\u4ef6\uff1a\nhttps://static.tan14.net/cdn_datas/stats.proto\n\n   \u6570\u636e\u6587\u4ef6\uff1a\u00a0\nhttps://static.tan14.net/cdn_datas/\nCHANNEL_ID_OR_PN\n/bandwidth.protobuf\n\n\n\u8bf7\u6c42\u6570\u548c\u9519\u8bef\u4fe1\u606f\n   proto\u6587\u4ef6\uff1a\nhttps://static.tan14.net/cdn_datas/cdn_info.proto\n\n   \u6570\u636e\u6587\u4ef6\uff1a\u00a0\nhttps://static.tan14.net/cdn_datas/\nCHANNEL_ID_OR_PN\n/cdn_info.protobuf\n\n\n\n\nURL\u53d8\u91cf\u8bf4\u660e\n\n\nURL\u5730\u5740\u4e2d\u5927\u5199\u7684\u4e3a\u53d8\u91cf, \u5176\u4e2d:\n\n\n\n\nPN \u4e3a\u60a8\u7684\u4ea7\u54c1ID\n\n\nCHANNEL_ID \u4e3a\u60a8\u67d0\u4e2a\u9891\u9053\u7684ID\n\n\n\n\n\u6570\u636e\u65f6\u95f4\u8303\u56f4\u8bf4\u660e\uff1a\n\n\n\n\n\u6d41\u91cf\u6587\u4ef6\u5b58\u653e\u8ddd\u79bb\u5f53\u524d\u65f6\u95f4\u534a\u5e74\u5185\u7684\u6570\u636e\n\n\n\u8bf7\u6c42\u6570\u548c\u9519\u8bef\u4fe1\u606f\u6587\u4ef6\u5b58\u653e\u8ddd\u79bb\u5f53\u524d\u65f6\u95f4\u4e00\u4e2a\u6708\u5185\u7684\u6570\u636e\n\n\n\n\n\u6ce8\u610f\u4e8b\u9879\uff1a\n\n\napp\n\u4e2d\u5c55\u793a\u7684\u56de\u6e90\u6d41\u91cf\u548c\u56de\u6e90\u8bf7\u6c42\u662f\u901a\u8fc7\u516c\u5f0f\u8ba1\u7b97\u5f97\u51fa\u7684\uff0c\u5177\u4f53\u516c\u5f0f\u5982\u4e0b\uff1a\n\u56de\u6e90\u6d41\u91cf = \u4e0a\u5c42\u56de\u6e90\u6d41\u91cf\n\u56de\u6e90\u8bf7\u6c42 = \u4e0a\u5c42\u56de\u6e90\u8bf7\u6c42\n\n\n\u4e0b\u9762\u4ecb\u7ecd\u4e00\u4e0b\u6570\u636e\u4e2d\u5404\u9879\u7684\u542b\u4e49:\n\n\n\n\n\u6d41\u91cfproto\u6587\u4ef6\uff08stats.proto\uff09\u5b9a\u4e49\u8bf4\u660e\uff1a\n\n\n\n\nText\n\n\nsyntax = \nproto2\n;\npackage stats;\n\nmessage Data {\n    repeated uint64 flow = 1 [packed=true];\n    #  flow\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b \u6d41\u91cf\u5355\u4f4d\uff08\u5b57\u8282\uff09\uff1a\n    #     \uff08\u8fb9\u7f18\u6d41\u91cf, \u4e0a\u5c42\u6d41\u91cf, \u56de\u6e90\u6d41\u91cf\uff09 \n}\n\nmessage Stats {\n   repeated Data data = 1;\n   repeated uint32 time = 2 [packed=true];\n}\n\n\n\n\n\n\n\u8bf7\u6c42\u6570\u548c\u9519\u8bef\u4fe1\u606fproto\u6587\u4ef6\uff08cdn_info.proto\uff09\u5b9a\u4e49\u8bf4\u660e\uff1a\n\n\n\n\nText\n\n\nsyntax = \nproto2\n;\npackage req_and_err;\n\nmessage Req {\n   repeated uint64 requests = 1 [packed=true];\n   #  requests\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b\uff1a\n   #     (\u8fb9\u7f18\u8bf7\u6c42\u6570, \u8fb9\u7f18\u52a8\u6001\u8bf7\u6c42\u6570, \u8fb9\u7f18\u56de\u6e90\u8bf7\u6c42\u6570, \u4e0a\u5c42\u8bf7\u6c42\u6570, \u4e0a\u5c42\u56de\u6e90\u8bf7\u6c42\u6570)\n}\n\nmessage E5xx {\n   repeated uint32 err = 1 [packed=true];\n   #  err\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b\uff1a\n   #     (\u8fb9\u7f185xx, \u8fb9\u7f18502, \u8fb9\u7f18503, \u8fb9\u7f18504, \u4e0a\u5c425xx, \u4e0a\u5c42502, \u4e0a\u5c42503, \u4e0a\u5c42504)\n}\n\nmessage E4xx {\n   repeated uint32 err = 1 [packed=true];\n   #  err\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b\uff1a\n   #     (\u8fb9\u7f184xx, \u8fb9\u7f18403, \u8fb9\u7f18404, \u4e0a\u5c424xx, \u4e0a\u5c42403, \u4e0a\u5c42404)\n}\n\nmessage Info {\n   repeated Req req = 1;\n   repeated E5xx e5xx = 2;\n   repeated E4xx e4xx = 3;\n   repeated uint32 time = 4 [packed=true];\n}", 
+            "title": "\u83b7\u53d6CDN\u6570\u636e"
+        }, 
+        {
+            "location": "/cdn_data/get_CDN_data/#cdnnew", 
+            "text": "TAN14 CDN \u901a\u8fc7\u9759\u6001protobuf\u6570\u636e\u6587\u4ef6\u7f13\u51b2\u7684\u5f62\u5f0f\u4e3a\u5ba2\u6237\u63d0\u4f9b\u4e00\u4e2aCDN\u6570\u636e\u7684\u51c6\u5b9e\u65f6\u89c2\u5bdf\u6548\u679c   \u4e3a\u4e86\u63d0\u4f9b\u4f53\u79ef\u66f4\u5c0f\uff0c\u89e3\u6790\u66f4\u5feb\uff0c\u6570\u636e\u6587\u4ef6\uff0c\u6211\u4eec\u4f7f\u7528\u4e86google\u7684 protobuf\u534f\u8bae \u6765\u6784\u5efa\u6570\u636e\u3002", 
+            "title": "\u83b7\u53d6CDN\u6570\u636e(New)"
+        }, 
+        {
+            "location": "/cdn_data/get_CDN_data/#_1", 
+            "text": "\u6d41\u91cf\n   proto\u6587\u4ef6\uff1a https://static.tan14.net/cdn_datas/stats.proto \n   \u6570\u636e\u6587\u4ef6\uff1a\u00a0 https://static.tan14.net/cdn_datas/ CHANNEL_ID_OR_PN /bandwidth.protobuf  \u8bf7\u6c42\u6570\u548c\u9519\u8bef\u4fe1\u606f\n   proto\u6587\u4ef6\uff1a https://static.tan14.net/cdn_datas/cdn_info.proto \n   \u6570\u636e\u6587\u4ef6\uff1a\u00a0 https://static.tan14.net/cdn_datas/ CHANNEL_ID_OR_PN /cdn_info.protobuf", 
+            "title": "\u6570\u636e\u6587\u4ef6\u4f4d\u7f6e"
+        }, 
+        {
+            "location": "/cdn_data/get_CDN_data/#url", 
+            "text": "URL\u5730\u5740\u4e2d\u5927\u5199\u7684\u4e3a\u53d8\u91cf, \u5176\u4e2d:   PN \u4e3a\u60a8\u7684\u4ea7\u54c1ID  CHANNEL_ID \u4e3a\u60a8\u67d0\u4e2a\u9891\u9053\u7684ID", 
+            "title": "URL\u53d8\u91cf\u8bf4\u660e"
+        }, 
+        {
+            "location": "/cdn_data/get_CDN_data/#_2", 
+            "text": "\u6d41\u91cf\u6587\u4ef6\u5b58\u653e\u8ddd\u79bb\u5f53\u524d\u65f6\u95f4\u534a\u5e74\u5185\u7684\u6570\u636e  \u8bf7\u6c42\u6570\u548c\u9519\u8bef\u4fe1\u606f\u6587\u4ef6\u5b58\u653e\u8ddd\u79bb\u5f53\u524d\u65f6\u95f4\u4e00\u4e2a\u6708\u5185\u7684\u6570\u636e", 
+            "title": "\u6570\u636e\u65f6\u95f4\u8303\u56f4\u8bf4\u660e\uff1a"
+        }, 
+        {
+            "location": "/cdn_data/get_CDN_data/#_3", 
+            "text": "app \u4e2d\u5c55\u793a\u7684\u56de\u6e90\u6d41\u91cf\u548c\u56de\u6e90\u8bf7\u6c42\u662f\u901a\u8fc7\u516c\u5f0f\u8ba1\u7b97\u5f97\u51fa\u7684\uff0c\u5177\u4f53\u516c\u5f0f\u5982\u4e0b\uff1a\n\u56de\u6e90\u6d41\u91cf = \u4e0a\u5c42\u56de\u6e90\u6d41\u91cf\n\u56de\u6e90\u8bf7\u6c42 = \u4e0a\u5c42\u56de\u6e90\u8bf7\u6c42  \u4e0b\u9762\u4ecb\u7ecd\u4e00\u4e0b\u6570\u636e\u4e2d\u5404\u9879\u7684\u542b\u4e49:   \u6d41\u91cfproto\u6587\u4ef6\uff08stats.proto\uff09\u5b9a\u4e49\u8bf4\u660e\uff1a   Text  syntax =  proto2 ;\npackage stats;\n\nmessage Data {\n    repeated uint64 flow = 1 [packed=true];\n    #  flow\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b \u6d41\u91cf\u5355\u4f4d\uff08\u5b57\u8282\uff09\uff1a\n    #     \uff08\u8fb9\u7f18\u6d41\u91cf, \u4e0a\u5c42\u6d41\u91cf, \u56de\u6e90\u6d41\u91cf\uff09 \n}\n\nmessage Stats {\n   repeated Data data = 1;\n   repeated uint32 time = 2 [packed=true];\n}   \u8bf7\u6c42\u6570\u548c\u9519\u8bef\u4fe1\u606fproto\u6587\u4ef6\uff08cdn_info.proto\uff09\u5b9a\u4e49\u8bf4\u660e\uff1a   Text  syntax =  proto2 ;\npackage req_and_err;\n\nmessage Req {\n   repeated uint64 requests = 1 [packed=true];\n   #  requests\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b\uff1a\n   #     (\u8fb9\u7f18\u8bf7\u6c42\u6570, \u8fb9\u7f18\u52a8\u6001\u8bf7\u6c42\u6570, \u8fb9\u7f18\u56de\u6e90\u8bf7\u6c42\u6570, \u4e0a\u5c42\u8bf7\u6c42\u6570, \u4e0a\u5c42\u56de\u6e90\u8bf7\u6c42\u6570)\n}\n\nmessage E5xx {\n   repeated uint32 err = 1 [packed=true];\n   #  err\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b\uff1a\n   #     (\u8fb9\u7f185xx, \u8fb9\u7f18502, \u8fb9\u7f18503, \u8fb9\u7f18504, \u4e0a\u5c425xx, \u4e0a\u5c42502, \u4e0a\u5c42503, \u4e0a\u5c42504)\n}\n\nmessage E4xx {\n   repeated uint32 err = 1 [packed=true];\n   #  err\u7ed3\u6784\u5b9a\u4e49\u5982\u4e0b\uff1a\n   #     (\u8fb9\u7f184xx, \u8fb9\u7f18403, \u8fb9\u7f18404, \u4e0a\u5c424xx, \u4e0a\u5c42403, \u4e0a\u5c42404)\n}\n\nmessage Info {\n   repeated Req req = 1;\n   repeated E5xx e5xx = 2;\n   repeated E4xx e4xx = 3;\n   repeated uint32 time = 4 [packed=true];\n}", 
+            "title": "\u6ce8\u610f\u4e8b\u9879\uff1a"
+        }, 
+        {
+            "location": "/Raw_log/download_cdn_log/", 
+            "text": "\u4e0b\u8f7dcdn\u539f\u59cb\u65e5\u5fd7\n\n\n\n\n1. \u7533\u8bf7\u5f00\u901aCDN\u539f\u59cb\u65e5\u5fd7\u4e0b\u8f7d\n\n\n\n\nTAN14 CDN\u9ed8\u8ba4\u5e76\u4e0d\u5f00\u901a\u9891\u9053\u7684\u539f\u59cb\u65e5\u5fd7\u4e0b\u8f7d, \u5982\u679c\u60a8\u9700\u8981\u9891\u9053\u7684\u539f\u59cb\u8bf7\u6c42\u65e5\u5fd7, \u8be5\u670d\u52a1\u4ec5\u63d0\u4f9b\u7533\u8bf7\u5f00\u901aCDN\u65e5\u5fd7\u540e\u7684\u539f\u59cb\u65e5\u5fd7, \u56e0\u6b64\u8bf7\u5c3d\u91cf\u5728\u6b63\u5f0f\u4f7f\u7528\u524d\u544a\u77e5\u6211\u4eec\u7684\u5546\u52a1, \u907f\u514d\u9057\u6f0f\u65e5\u5fd7.\n\n\n\u65e5\u5fd7\u53ef\u4ee5\u5168\u90e8\u9891\u9053\u6536\u96c6\u5728\u4e00\u8d77, \u4e5f\u53ef\u4ee5\u5206\u9891\u9053\u6536\u96c6, \u5177\u4f53\u54ea\u79cd\u65b9\u5f0f\u8bf7\u6309\u7167\u60a8\u7684\u9700\u6c42\u544a\u77e5\u6211\u4eec\u7684\u5546\u52a1.\n\n\n2. \u65e5\u5fd7\u5b58\u50a8\u63cf\u8ff0\n\n\n\n\nTAN14 CDN \u63d0\u4f9b\u7684\u539f\u59cbCDN\u65e5\u5fd7\u4ee5\u9759\u6001\u6587\u4ef6\u4e0b\u8f7d\u7684\u65b9\u5f0f\u63d0\u4f9b\u7ed9\u5ba2\u6237, \u65e5\u5fd7\u6bcf5\u5206\u949f\u4e00\u4efd, \u5ef6\u8fdf20\u5206\u949f.\n\n\n3. \u65e5\u5fd7\u4e0b\u8f7d\u5730\u5740\n\n\n\n\nhttps://rawlog.tan14.net/PN_OR_CHANNEL_ID/YYYY-mm-dd/HH-MM.log.tar.gz\n\n\n\u5982\u679c\u60a8\u7533\u8bf7\u7684\u65e5\u5fd7\u4e3a\u5168\u90e8\u9891\u9053\u6536\u96c6\u5728\u4e00\u8d77, \u5219\u4e0a\u8ff0URL\u4e2d\u00a0\nPN_OR_CHANNEL_ID\n\u00a0\u4e00\u503c\u5e94\u4e3a\u60a8\u7684\nPN\n\u503c, \u5982\u679c\u4e3a\u5206\u9891\u9053\u6536\u96c6, \u5219\u4e3a\u60a8\u5177\u4f53\u67d0\u4e00\u9891\u9053\u7684ID\u503c\n\n\nMM\n\u00a0\u4e3a\u65745\u5206\u949f\u7684\u503c, \u4f8b\u5982 00 05 10 ... 50 55 \u7b49\n\u4e00\u4e2a\u793a\u4f8b\u4e0b\u8f7d\u5730\u5740:\n\nhttps://rawlog.tan14.net/A_CHANNEL_ID/2015-11-27/09-30.log.tar.gz\n\n\n4. \u65e5\u5fd7\u683c\u5f0f\u89e3\u91ca\n\n\n\n\n\u6211\u4eec\u4ee5\u4e00\u6761\u5177\u4f53\u7684\u65e5\u5fd7\u8bf4\u660e\u6bcf\u4e2a\u5b57\u6bb5\u7684\u542b\u4e49:\n\n\n1448553735.814 0.075 221.181.196.70 GET \"URL\"/HTTP/1.1 - \"application/json\" \"AGENT\" \"-\" MISS:-/hostname 200 652 63 CHANNEL_ID\n\n\n1448553735.814 UNIX\u65f6\u95f4\u6233\n0.075 \u670d\u52a1\u5668\u54cd\u5e94\u65f6\u95f4(s)\n221.181.196.70 client IP\nGET HTTP METHOD\n\"URL\"/HTTP/1.1 \"REQUEST_URL\"/PROTOCOL\n\"-\" remote user\n\"application/json\" \"\u670d\u52a1\u7aef\u8fd4\u56de\u7684content type\"\n\"AGENT\" \"USER AGENT\"\n\"-\" referer\nMISS:-/hostname TAN14 HIT/MISS \u4e0e \u65e5\u5fd7\u6807\u8bb0\n200 http code\n652 \u670d\u52a1\u7aef\u53d1\u9001\u5b57\u8282\u6570\n63 \u670d\u52a1\u7aef\u53d1\u9001body\u5b57\u8282\u6570\nCHANNEL_ID \u5177\u4f53\u7684\u67d0\u4e2a\u9891\u9053ID", 
+            "title": "\u4e0b\u8f7dcdn\u539f\u59cb\u65e5\u5fd7"
+        }, 
+        {
+            "location": "/Raw_log/download_cdn_log/#cdn", 
+            "text": "", 
+            "title": "\u4e0b\u8f7dcdn\u539f\u59cb\u65e5\u5fd7"
+        }, 
+        {
+            "location": "/Raw_log/download_cdn_log/#1-cdn", 
+            "text": "TAN14 CDN\u9ed8\u8ba4\u5e76\u4e0d\u5f00\u901a\u9891\u9053\u7684\u539f\u59cb\u65e5\u5fd7\u4e0b\u8f7d, \u5982\u679c\u60a8\u9700\u8981\u9891\u9053\u7684\u539f\u59cb\u8bf7\u6c42\u65e5\u5fd7, \u8be5\u670d\u52a1\u4ec5\u63d0\u4f9b\u7533\u8bf7\u5f00\u901aCDN\u65e5\u5fd7\u540e\u7684\u539f\u59cb\u65e5\u5fd7, \u56e0\u6b64\u8bf7\u5c3d\u91cf\u5728\u6b63\u5f0f\u4f7f\u7528\u524d\u544a\u77e5\u6211\u4eec\u7684\u5546\u52a1, \u907f\u514d\u9057\u6f0f\u65e5\u5fd7.  \u65e5\u5fd7\u53ef\u4ee5\u5168\u90e8\u9891\u9053\u6536\u96c6\u5728\u4e00\u8d77, \u4e5f\u53ef\u4ee5\u5206\u9891\u9053\u6536\u96c6, \u5177\u4f53\u54ea\u79cd\u65b9\u5f0f\u8bf7\u6309\u7167\u60a8\u7684\u9700\u6c42\u544a\u77e5\u6211\u4eec\u7684\u5546\u52a1.", 
+            "title": "1. \u7533\u8bf7\u5f00\u901aCDN\u539f\u59cb\u65e5\u5fd7\u4e0b\u8f7d"
+        }, 
+        {
+            "location": "/Raw_log/download_cdn_log/#2", 
+            "text": "TAN14 CDN \u63d0\u4f9b\u7684\u539f\u59cbCDN\u65e5\u5fd7\u4ee5\u9759\u6001\u6587\u4ef6\u4e0b\u8f7d\u7684\u65b9\u5f0f\u63d0\u4f9b\u7ed9\u5ba2\u6237, \u65e5\u5fd7\u6bcf5\u5206\u949f\u4e00\u4efd, \u5ef6\u8fdf20\u5206\u949f.", 
+            "title": "2. \u65e5\u5fd7\u5b58\u50a8\u63cf\u8ff0"
+        }, 
+        {
+            "location": "/Raw_log/download_cdn_log/#3", 
+            "text": "https://rawlog.tan14.net/PN_OR_CHANNEL_ID/YYYY-mm-dd/HH-MM.log.tar.gz  \u5982\u679c\u60a8\u7533\u8bf7\u7684\u65e5\u5fd7\u4e3a\u5168\u90e8\u9891\u9053\u6536\u96c6\u5728\u4e00\u8d77, \u5219\u4e0a\u8ff0URL\u4e2d\u00a0 PN_OR_CHANNEL_ID \u00a0\u4e00\u503c\u5e94\u4e3a\u60a8\u7684 PN \u503c, \u5982\u679c\u4e3a\u5206\u9891\u9053\u6536\u96c6, \u5219\u4e3a\u60a8\u5177\u4f53\u67d0\u4e00\u9891\u9053\u7684ID\u503c  MM \u00a0\u4e3a\u65745\u5206\u949f\u7684\u503c, \u4f8b\u5982 00 05 10 ... 50 55 \u7b49\n\u4e00\u4e2a\u793a\u4f8b\u4e0b\u8f7d\u5730\u5740: https://rawlog.tan14.net/A_CHANNEL_ID/2015-11-27/09-30.log.tar.gz", 
+            "title": "3. \u65e5\u5fd7\u4e0b\u8f7d\u5730\u5740"
+        }, 
+        {
+            "location": "/Raw_log/download_cdn_log/#4", 
+            "text": "\u6211\u4eec\u4ee5\u4e00\u6761\u5177\u4f53\u7684\u65e5\u5fd7\u8bf4\u660e\u6bcf\u4e2a\u5b57\u6bb5\u7684\u542b\u4e49:  1448553735.814 0.075 221.181.196.70 GET \"URL\"/HTTP/1.1 - \"application/json\" \"AGENT\" \"-\" MISS:-/hostname 200 652 63 CHANNEL_ID  1448553735.814 UNIX\u65f6\u95f4\u6233\n0.075 \u670d\u52a1\u5668\u54cd\u5e94\u65f6\u95f4(s)\n221.181.196.70 client IP\nGET HTTP METHOD\n\"URL\"/HTTP/1.1 \"REQUEST_URL\"/PROTOCOL\n\"-\" remote user\n\"application/json\" \"\u670d\u52a1\u7aef\u8fd4\u56de\u7684content type\"\n\"AGENT\" \"USER AGENT\"\n\"-\" referer\nMISS:-/hostname TAN14 HIT/MISS \u4e0e \u65e5\u5fd7\u6807\u8bb0\n200 http code\n652 \u670d\u52a1\u7aef\u53d1\u9001\u5b57\u8282\u6570\n63 \u670d\u52a1\u7aef\u53d1\u9001body\u5b57\u8282\u6570\nCHANNEL_ID \u5177\u4f53\u7684\u67d0\u4e2a\u9891\u9053ID", 
+            "title": "4. \u65e5\u5fd7\u683c\u5f0f\u89e3\u91ca"
+        }
+    ]
+}

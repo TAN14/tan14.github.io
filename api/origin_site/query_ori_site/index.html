@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>查询一个源站 - TAN14</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "查询一个源站";
+    var mkdocs_page_input_path = "origin_site/query_ori_site.md";
+    var mkdocs_page_url = "/origin_site/query_ori_site/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> TAN14</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">首页</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>概述</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../general/basic_raw/">基本规范</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../general/url_var/">URL中的变量</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../general/api_auth/">api的认证</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../general/return_value/">常见返回</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../general/update_log/">更新日志</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>频道管理</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/quick_channel/">快速创建频道</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/query_channel_list/">查询频道列表</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/query_one_channel/">查询单个频道信息</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/create_channel/">创建频道</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/update_channel/">修改频道信息</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/active_channel/">开启频道</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/pause_channel/">暂停频道</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/issue_channel_conf/">下发频道配置</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../channel/delete_channel/">删除频道</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>域名管理</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../domain/query_domain/">查询一个域名</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../domain/add_domain/">添加一个新域名</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../domain/update_domain_conf/">修改域名设置</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../domain/delete_domain/">删除一个域名</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>源站管理</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">查询一个源站</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#_1">查询一个源站</a></li>
+                
+                    <li><a class="toctree-l4" href="#_2">请求地址</a></li>
+                
+                    <li><a class="toctree-l4" href="#_3">携带参数</a></li>
+                
+                    <li><a class="toctree-l4" href="#_4">响应</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../add_new_ori_site/">添加一个新源站</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../update_ori_site_conf/">修改源站设置</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../turn_on_off_site/">开启／暂停源站</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../delete_ori_site/">删除一个源站</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>使用TAN14提供的网络存储</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/query_storage/">查询可用TAN14网络存储列表</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/query_established_storage/">查询名下已开通网络存储列表</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/create_storage/">申请创建一个TAN14网络存储</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/open_rsync/">为TAN14网络存储开通rsync同步</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/bind_storage/">绑定TAN14网络存储作为网络源站</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/stop_bind_storage/">停止使用TAN14网络存储作为网络源站</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../net_storage/change_FTP/">修改网络存储的FTP信息</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>安全设置</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../security/query_blacklist/">查询访客黑白名单／防盗链黑白名单</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../security/add_blacklist/">添加访客黑白名单／防盗链黑白名单</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>缓存规则</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cache_raw/query_cache_raw/">查询缓存规则</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cache_raw/add_cache_raw/">添加缓存规则</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cache_raw/change_cache_raw/">修改／删除缓存规则</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>内容管理</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/query_refresh_task_list/">查询刷新任务列表</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/query_single_task/">查询单个刷新任务</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/add_task/">添加刷新任务</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/query_preload_tasklist/">查询预加载任务列表</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/query_single_preload_task/">查询单个预加载任务</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/add_preload_task/">添加预加载任务</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/query_catalog_refresh_log/">查询目录刷新记录</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../content_mgr/add_catalog_refresh/">添加目录刷新</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>缓存校验</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cache_check/submit_task/">提交校验任务</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cache_check/check_result/">查看校验结果</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>CDN数据</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cdn_data/get_CDN_data/">获取CDN数据</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>RAW LOG下载</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Raw_log/download_cdn_log/">下载cdn原始日志</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">TAN14</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>源站管理 &raquo;</li>
+        
+      
+    
+    <li>查询一个源站</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="_1">查询一个源站</h3>
+<h5 id="_2">请求地址</h5>
+<p><strong>GET</strong>    </p>
+<pre><code>http://dev.api.tan14.cn/wp/v2/YOUR_APP_PN/channel/YOUR_APP_CHANNEL_ID/backend/YOUR_APP_BACKEND_ID
+</code></pre>
+<h5 id="_3">携带参数</h5>
+<p>无</p>
+<h5 id="_4">响应</h5>
+<h6 id="_5">返回字段说明</h6>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>源站记录ID, URL占位符中的 BACKEND_ID 的真实值</td>
+</tr>
+<tr>
+<td>name</td>
+<td>源站名称, 用于记忆</td>
+</tr>
+<tr>
+<td>backend</td>
+<td>源站的值</td>
+</tr>
+<tr>
+<td>port</td>
+<td>源站服务端口</td>
+</tr>
+<tr>
+<td>channel_id</td>
+<td>该源站所属频道, URL占位符中的 CHANNEL_ID 的真实值</td>
+</tr>
+<tr>
+<td>status</td>
+<td>该源站使用状态, true代表使用中</td>
+</tr>
+<tr>
+<td>created</td>
+<td>该源站添加时间</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../add_new_ori_site/" class="btn btn-neutral float-right" title="添加一个新源站">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../domain/delete_domain/" class="btn btn-neutral" title="删除一个域名"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../domain/delete_domain/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../add_new_ori_site/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

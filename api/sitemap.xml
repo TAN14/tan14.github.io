@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>None/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>None/general/basic_raw/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/general/url_var/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/general/api_auth/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/general/return_value/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/general/update_log/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/channel/quick_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/query_channel_list/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/query_one_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/create_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/update_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/active_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/pause_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/issue_channel_conf/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/channel/delete_channel/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/domain/query_domain/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/domain/add_domain/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/domain/update_domain_conf/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/domain/delete_domain/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/origin_site/query_ori_site/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/origin_site/add_new_ori_site/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/origin_site/update_ori_site_conf/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/origin_site/turn_on_off_site/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/origin_site/delete_ori_site/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/net_storage/query_storage/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/net_storage/query_established_storage/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/net_storage/create_storage/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/net_storage/open_rsync/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/net_storage/bind_storage/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/net_storage/stop_bind_storage/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/net_storage/change_FTP/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/security/query_blacklist/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/security/add_blacklist/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/cache_raw/query_cache_raw/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/cache_raw/add_cache_raw/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/cache_raw/change_cache_raw/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/content_mgr/query_refresh_task_list/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/query_single_task/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/add_task/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/query_preload_tasklist/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/query_single_preload_task/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/add_preload_task/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/query_catalog_refresh_log/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/content_mgr/add_catalog_refresh/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/cache_check/submit_task/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/cache_check/check_result/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/cdn_data/get_CDN_data/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/Raw_log/download_cdn_log/</loc>
+     <lastmod>2016-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>
